@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diocesano Conceito</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="src/images/favicon.png" type="image/png">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CSS AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <!-- ICONS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- JAVASCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
+    <!-- JAVASCRIPT AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="src/js/scripts.js" defer></script>
+</head>
+
+<body>
+    <script> AOS.init({duration: 700}); </script>
+
+    <header class="container-fluid header">
+        <div class="row justify-content-space-between align-items-center">
+            <a href="#inicio" class="logo col-3">
+                <h1 class="img-logo"></h1>
+            </a>
+
+            <nav class="nav-bar col-8">
+                <ul class="desktop-menu">
+                    <li class="item-menu"><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li class="item-menu"><a href="#secao-cards" class="nav-link">Missão</a></li>
+                    <li class="item-menu"><a href="#secao-informacoes" class="nav-link">Sobre</a></li>
+                    <li class="item-menu"><a href="#secao-cursos" class="nav-link">Cursos</a></li>
+                    <li class="item-menu"><a href="#secao-endereco" class="nav-link">Visite-nos</a></li>
+                    <li class="item-menu"><a href="#footer_contacts" class="nav-link">Contato</a></li>
+                </ul>
+
+                <div class="mobile-menu-icon">
+                    <button onClick="menuShow()"><img src="src/images/menu-mobile/button_mobile.svg" alt="" class="icone-menu-mobile"></button>
+                </div>
+            </nav>
+
+            <nav class="mobile-menu">
+                <ul class="menu">
+                    <li class="item-menu"><a href="#inicio" class="nav-link" onClick="menuShow()">Inicio</a></li>
+                    <li class="item-menu"><a href="#secao-cards" class="nav-link" onClick="menuShow()">Missão</a></li>
+                    <li class="item-menu"><a href="#secao-informacoes" class="nav-link" onClick="menuShow()">Sobre</a></li>
+                    <li class="item-menu"><a href="#secao-cursos" class="nav-link" onClick="menuShow()">Cursos</a></li>
+                    <li class="item-menu"><a href="#secao-endereco" class="nav-link" onClick="menuShow()">Visite-nos</a></li>
+                    <li class="item-menu"><a href="#footer_contacts" onClick="menuShow()" class="nav-link">Contator</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid fundo-carrosel" id="inicio">
+            <section class="container carousel slide" data-bs-ride="carousel"  id="carouselExampleAutoplaying">
+                <div class="carousel-inner">
+                    <div class="carousel-item active imagem-carrousel">
+                        <picture class="d-block w-100">
+                            <source media="(max-width: 500px)" srcset="src/images/carrousel-mobile/img-1-mobile.jpg" type="image/jpg">
+                            <source media="(max-width: 992px)" srcset="src/images/carrousel/01.jpg" type="image/jpeg">
+                            <img src="src/images/carrousel-desktop/imagem-desktop-01.png" class="img-fluid" alt="">
+                        </picture>
+                    </div>
+                    <div class="carousel-item imagem-carrousel">
+                        <picture class="d-block w-100">
+                            <source media="(max-width: 500px)" srcset="src/images/carrousel-mobile/img-2-mobile.jpg" type="image/jpg">
+                            <source media="(max-width: 992px)" srcset="src/images/carrousel/02.jpg" type="image/jpeg">
+                            <img src="src/images/carrousel-desktop/imagem-desktop-02.png" class="img-fluid" alt="">
+                        </picture>
+                    </div>
+                    <div class="carousel-item imagem-carrousel">
+                        <picture class="d-block w-100">
+                            <source media="(max-width: 500px)" srcset="src/images/carrousel-mobile/img-3-mobile.jpg" type="image/jpg">
+                            <source media="(max-width: 992px)" srcset="src/images/carrousel/03.jpg" type="image/jpeg">
+                            <img src="src/images/carrousel-desktop/imagem-desktop-03.png" class="img-fluid" alt="">
+                        </picture>
+                    </div>
+                    <div class="carousel-item imagem-carrousel">
+                        <picture class="d-block w-100">
+                            <source media="(max-width: 500px)" srcset="src/images/carrousel-mobile/img-4-mobile.jpg" type="image/jpg">
+                            <source media="(max-width: 992px)" srcset="src/images/carrousel/04.jpg" type="image/jpeg">
+                            <img src="src/images/carrousel-desktop/imagem-desktop-04.png" class="img-fluid" alt="">
+                        </picture>
+                    </div>
+                    <div class="carousel-item imagem-carrousel">
+                        <picture class="d-block w-100">
+                            <source media="(max-width: 500px)" srcset="src/images/carrousel-mobile/img-5-mobile.jpg" type="image/jpg">
+                            <source media="(max-width: 992px)" srcset="src/images/carrousel/05.jpg" type="image/jpeg">
+                            <img src="src/images/carrousel-desktop/imagem-desktop-05.png" class="img-fluid" alt="">
+                        </picture>
+                    </div>
+                    <div class="carousel-item imagem-carrousel">
+                        <picture class="d-block w-100 ">
+                            <source media="(max-width: 500px)" srcset="src/images/carrousel-mobile/img-6-mobile.jpg" type="image/jpg">
+                            <source media="(max-width: 992px)" srcset="src/images/carrousel/06.jpg" type="image/jpeg">
+                            <img src="src/images/carrousel-desktop/imagem-desktop-06.png" class=" img-fluid" alt="">
+                        </picture>
+                    </div>
+                    <div class="carousel-item imagem-carrousel">
+                        <picture class="d-block w-100">
+                            <source media="(max-width: 500px)" srcset="src/images/carrousel-mobile/img-7-mobile.jpg" type="image/jpg">
+                            <source media="(max-width: 992px)" srcset="src/images/carrousel/07.jpg" type="image/jpeg">
+                            <img src="src/images/carrousel-desktop/imagem-desktop-07.png" class="img-fluid" alt="">
+                        </picture>
+                    </div>
+                    <div class="carousel-item imagem-carrousel">
+                        <picture class="d-block w-100">
+                            <source media="(max-width: 500px)" srcset="src/images/carrousel-mobile/img-1-mobile.jpg" type="image/jpg">
+                            <source media="(max-width: 992px)" srcset="src/images/carrousel/08.jpg" type="image/jpeg">
+                            <img src="src/images/carrousel-desktop/imagem-desktop-08.png" class="img-fluid" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </section>
+        </div>
+
+        <div class="container-fluid" id="fundo-cards">
+            <section class="container" id="secao-cards">
+                <div class="box-cards">
+                    <div class="col-12 col-lg-3 card-item" id="card-1">
+                        <div class="card-item-top">
+                            <div class="img-card">
+                                <img src="src/icones/icone-capelo.png" alt="" class="img-card-item">
+                            </div>
+                        </div>
+                        <div class="card-item-bottom" data-aos="fade-up">
+                            <h2 class="titulo-card">Em Busca da Excelência Acadêmica</h2>
+                            <p class="paragrafo-card">No Colégio Diocesano, estamos empenhados na busca constante pela excelência acadêmica. Com educadores experientes e currículo abrangente, estabelecemos bases sólidas para um futuro promissor </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 card-item" id="card-2">
+                        <div class="card-item-top">
+                            <div class="img-card">
+                                <img src="src/icones/icone-community.png" class="img-card-item">
+                            </div>
+                        </div>
+                        <div class="card-item-bottom" data-aos="fade-up">
+                            <h2 class="titulo-card">Foco na Comunidade Acolhedora</h2>
+                            <p class="paragrafo-card" >No Colégio Diocesano, promovemos uma atmosfera acolhedora e inclusiva. Construímos laços de amizade genuínos, onde cada aluno é valorizado e incentivado a crescer.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 card-item" id="card-3">
+                        <div class="card-item-top">
+                            <div class="img-card">
+                                <img src="src/icones/icone-book.png" alt="" class="img-card-item">
+                            </div>
+                        </div>
+                        <div class="card-item-bottom" data-aos="fade-up">
+                            <h2 class="titulo-card">Ênfase no Desenvolvimento Integral</h2>
+                            <p class="paragrafo-card">No Colégio Diocesano, temos como prioridade promover o crescimento integral. Além do ensino de qualidade, oferecemos diversas atividades extracurriculares para nutrir habilidades sociais, esportivas e artísticas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="container-fluid" id="secao-informacoes">
+            <div data-aos="fade-up" class="container informacoes">
+                <div class="col-12 col-md-6 informacoes-icone">
+                    <div class="logo-sobre"></div>
+                </div>
+                <div class="col-12 col-md-6 informacoes-text">
+                    <div class="box-paragrafo">
+                        <p>O Colégio Diocesano Conceito é uma instituição de ensino dedicada a proporcionar uma educação de qualidade, enraizada em valores sólidos e excelência acadêmica. Com uma longa tradição de ensino, nosso compromisso é preparar os alunos para o sucesso na vida, promovendo o crescimento pessoal, social e intelectual</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid" id="secao-cursos">
+            <div class="container" data-aos="fade-up">
+                <h2 class="titulo-secao">Nossos Cursos</h2>
+                <div class="row justify-content-center cursos" data-aos="fade-up">
+                    <div class="curso-card col-11 col-lg-3 mb-2 mb-lg-4 mt-lg-5">
+                        <div class="curso-imagem">
+                            <img src="src/images/secao-cursos/educacao-infantil.jpg" alt="curso">
+                        </div>
+                        <div class="curso-info">
+                            <h3>Educação <br> Infantil</h3>
+                            <p class="descricao-curso">Nossa Educação Infantil é um ambiente acolhedor e estimulante, projetado para crianças em suas primeiras etapas de aprendizado. Com um currículo cuidadosamente elaborado, enfatizamos o desenvolvimento cognitivo, social e emocional.</p>
+                            <button class="botao-saiba-mais">Saiba Mais</button>
+                        </div>
+                    </div>
+
+                    <div class="curso-card col-11 col-lg-3 mb-2 mb-lg-4 mt-lg-5">
+                        <div class="curso-imagem">
+                            <img src="src/images/secao-cursos/ensino-fun.jpg" alt="Nome do Curso">
+                        </div>
+                        <div class="curso-info">
+                            <h3>Ensino <br> Fundamental</h3>
+                            <p class="descricao-curso">Nosso Ensino Fundamental é a base sólida para o sucesso acadêmico. Com ênfase em habilidades de leitura, escrita e matemática, nossos alunos exploram uma variedade de disciplinas em um ambiente de aprendizado colaborativo. </p>
+                            <button class="botao-saiba-mais">Saiba Mais</button>
+                        </div>
+                    </div>
+                    <div class="curso-card col-11 col-lg-3 mb-2 mb-lg-4 mt-lg-5">
+                        <div class="curso-imagem">
+                            <img src="src/images/secao-cursos/ensino-medio.jpg" alt="curso">
+                        </div>
+                        <div class="curso-info">
+                            <h3>Ensino <br> Médio</h3>
+                            <p class="descricao-curso">O Ensino Médio é um momento de crescimento pessoal e acadêmico. Nossos alunos se envolvem em cursos avançados, participam de projetos de pesquisa e são preparados para os exames mais importantes na sua vida acadêmica.</p>
+                            <button class="botao-saiba-mais">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center cursos mt-5 mt-lg-1" >
+                    <div class="curso-card col-11 col-lg-10 mt-4 mb-5 mb-lg-5 mt-lg-4">
+                        <div class="curso-imagem">
+                            <img src="src/images/secao-cursos/atividades.jpg" alt="Nome do Curso">
+                        </div>
+                        <div class="curso-info">
+                            <h3>Atividades Extracurriculares</h3>
+                            <p class="descricao-curso">Além dos cursos acadêmicos, oferecemos uma ampla gama de atividades extracurriculares que enriquecem a experiência dos alunos. Isso inclui esportes competitivos, artes cênicas, música, clubes acadêmicos e muito mais. </p>
+                            <button class="botao-saiba-mais">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                
+        <section class="secao-maps">
+            <div class="secao-maps-top" id="secao-endereco">
+                <div class="overlay"></div>
+                <div class="container maps-endereco">
+                    <div class="localizacao">
+                        <div class="localizacao-content"  data-aos="fade-up">
+                            <h2 class="titulo-maps typing-animation">Visite o <span class="text-laranja">Diocesano Conceito</span></h2>
+                            <span class="text-endereco">
+                                Venha nos visitar durante o horário comercial e experimente de perto nossa educação inovadora, Estamos localizados na Rua Nelson Alencar, 569 - Centro, Crato - CE, 63110-110. </span>
+                        </div>
+                        <div class="icone-localizacao">
+                            <img src="src/images/secao-maps/icone-localizacao-novo.png" alt="" data-aos="fade-up">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="col-12 maps-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.049991823354!2d-39.41338902580222!3d-7.235138371055742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a18484451aea13%3A0xb28923c9ecc5939d!2sDiocesan%20College%20of%20Crato!5e0!3m2!1spt-BR!2sbr!4v1692638642015!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe-maps"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer-logo" data-aos="fade-up">
+                <img src="src/images/menu-mobile/logo-branca-mobile.png" alt="">
+                <a href="#inicio"><button class="btn"><i class="bi bi-arrow-up-circle-fill btn-voltar"></i></button></a>
+            </div>
+
+            <ul class="footer-list" data-aos="fade-up">
+                <li>
+                    <h2>Menu</h2>
+                </li>
+                <li>
+                    <a href="#inicio" class="footer-link">Inicio</a>
+                </li>
+                <li>
+                    <a href="#secao-cards" class="footer-link">Missão</a>
+                </li>
+                <li>
+                    <a href="#secao-informacoes" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#secao-cursos" class="footer-link">Cursos</a>
+                </li>
+                <li>
+                    <a href="#secao-endereco" class="footer-link">Visite-nos</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list" data-aos="fade-up">
+                <li>
+                    <h2>Contato</h2>
+                </li>
+                <li>
+                    
+                    <a href="" class="footer-link"><i class="bi bi-envelope-at-fill icone-email"></i> Email</a>
+                </li>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=5588997137570&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21+%F0%9F%98%8A" target="_blank" class="footer-link"><i class="bi bi-telephone-fill icone-faleconosco"></i> Fale conosco</a>
+                </li>
+            </ul>
+
+            <div id="footer_contacts" data-aos="fade-up">
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/diocesanodocratoconceito/" class="footer-link" target="_blank" id="instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+    
+                    <a href="https://www.youtube.com/channel/UCkdwV68PetF2mRnHeDsrVMw" class="footer-link" target="_blank" id="youtube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+    
+                    <a href="https://www.tiktok.com/@colegiodiocesano1" class="footer-link" target="_blank" id="tiktok">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                </div>
+
+                <div id="slogan">
+                    <p>A educação humanizada <br> transforma</p>
+                </div>
+            </div>
+        </div> 
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+html{
+    font-size: 62.5%;
+}
+
+:root {
+    --roxo-escuro:#57167c;
+    --roxo-intermediario:#6e3983;
+    --roxo-claro:#965aa3;
+    --laranja-escuro:#f58634;    
+    --laranja-intermediario:#f9a132;
+    --laranja-claro:#f2b448;
+    --branco-font: #fff;
+}
+
+/* RESPONSIVO HEADER */
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    transition: 0.5s;
+    transform: translateX(100%);
+}
+
+.oculto{
+    opacity: 0;
+}
+
+
+
+@media (max-width: 1150px) {
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size: 5rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+
+        overflow: hidden;
+    }
+    
+    span.text-laranja {
+        font-size: 5rem;
+        color: var(--laranja-claro);
+    }
+
+    .maps-endereco .localizacao .localizacao-content .text-endereco {
+        width: 90%;;
+        font-size:2rem;
+        z-index: 2;
+        text-align: justify;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size: 4.5rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+
+        overflow: hidden;
+    }
+    
+    span.text-laranja {
+        font-size: 4.5rem;
+        color: var(--laranja-claro);
+    }
+
+    .maps-endereco .localizacao .localizacao-content .text-endereco {
+        width: 90%;;
+        font-size:1.8rem;
+        z-index: 2;
+        text-align: justify;
+    }
+
+    .maps-endereco .icone-localizacao img {
+        height: 130px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    nav .desktop-menu {
+        display: flex;
+        justify-content:flex-start;
+        width: 100%;
+    }
+
+    .box-cards{
+        justify-content: center;
+    }
+
+    .card-item{
+        width: fit-content;
+        margin-bottom: 70px;
+    }
+
+    .informacoes-text .box-paragrafo p{
+        font-size: 2rem; 
+     }
+
+    .maps-endereco .localizacao .localizacao-content{
+        widows: 80%;
+    }
+
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size: 4rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    span.text-laranja {
+        font-size: 4rem;
+        color: var(--laranja-claro);
+    }
+}
+
+@media (max-width: 800px) {
+    
+    nav .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu{
+        background-color: var(--roxo-intermediario);
+        
+    }
+
+    .mobile-menu-icon{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul.menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        padding-left: 0;
+    }
+
+    .mobile-menu .item-menu {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    .open {
+        transform: translateY(0px);
+    }
+
+    .informacoes-icone {
+        border-radius: 10px 10px 0px 0px ;
+     }
+
+    .informacoes-text {
+        border-radius: 0px 0px 10px 10px ;
+     }
+
+    .maps-endereco .localizacao {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        color: var(--branco-font);
+        z-index: 2;
+    }
+
+    .maps-endereco .localizacao .localizacao-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size:3.8rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    span.text-laranja {
+        font-size: 3.8rem;
+        color: var(--laranja-claro);
+    }
+    .maps-endereco .localizacao .localizacao-content .text-endereco {
+        width: 90%;;
+        font-size:2rem;
+        z-index: 2;
+        text-align: justify;
+    }
+
+    .maps-endereco .icone-localizacao{
+        width: 50%;
+        border-radius: 10px;
+        z-index: 2;
+        transform: translateY(0px); 
+        animation: floating 4s ease-in-out infinite;
+    }
+
+    .maps-endereco .icone-localizacao img {
+        height: 100px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .maps-endereco .localizacao {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        color: var(--branco-font);
+        z-index: 2;
+    }
+
+    .maps-endereco .localizacao .localizacao-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+
+        padding: 15px;
+    }
+
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size:3rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    span.text-laranja {
+        font-size: 3rem;
+        color: var(--laranja-claro);
+    }
+    .maps-endereco .localizacao .localizacao-content .text-endereco {
+        width: 90%;;
+        font-size:1.6rem;
+        z-index: 2;
+        text-align: justify;
+    }
+
+    .maps-endereco .icone-localizacao{
+        border-radius: 10px;
+        z-index: 2;
+        transform: translateY(0px); 
+        animation: floating 4s ease-in-out infinite;
+    }
+
+    .maps-endereco .icone-localizacao img {
+        height: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .informacoes {
+        display: flex;
+        align-items:center ;
+        height: 80%;
+        padding-bottom: 80px;
+        max-width: 90vw;
+    }
+    .informacoes-text .box-paragrafo p{
+        font-size: 2.2rem; 
+    }
+    .informacoes-icone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--branco-font);
+        height: 300px;
+    }
+     .informacoes-icone .logo{
+        display: inline-flex;
+        transform: scale(0.90);
+    }
+     .logo img{
+        width: 300px;
+     }
+    .maps-endereco .localizacao {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        color: var(--branco-font);
+        z-index: 2;
+    }
+    .maps-endereco .localizacao .localizacao-content{
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size: 3.3rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+
+        overflow: hidden;
+    }
+    span.text-laranja {
+        font-size: 3.3rem;
+        color: var(--laranja-claro);
+    }
+    .maps-endereco .localizacao .localizacao-content .text-endereco {
+        width: 100%;;
+        font-size:1.5rem;
+        z-index: 2;
+        text-align: justify;
+    }
+    .maps-endereco .icone-localizacao{
+        width: 100%;
+
+        display: none;
+        justify-content:center ;
+        animation: floatingMobile 4s ease-in-out infinite;
+    }
+    .maps-endereco .icone-localizacao img {
+        text-align: center;
+        height: 80px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header{
+        display: block;
+    }
+
+    header .logo .img-logo {
+        width: 78px;
+        height: 50px;
+        background-image: url("../images/menu-mobile/logo-branca-mobile.png");
+        background-size: cover;
+    }
+
+
+    div.carousel-inner {
+        max-height: 400px;
+    }
+
+
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size: 3rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+
+        overflow: hidden;
+    }
+    
+    span.text-laranja {
+        font-size: 3rem;
+        color: var(--laranja-claro);
+    }
+
+    .maps-endereco .localizacao .localizacao-content .text-endereco {
+        width: 100%;;
+        font-size:1.3rem;
+        z-index: 2;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 450px) {
+
+
+    
+    .informacoes-icone .logo{
+        display: inline-flex;
+        transform: scale(0.60);
+        width: 100%;
+     }
+
+     .logo img{
+        width: 200px;
+        height: 100px;
+     }
+
+     
+    .informacoes-text .box-paragrafo p{
+        font-size: 1.6rem; 
+     }
+
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size: 2.1rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+
+        overflow: hidden;
+    }
+    
+    span.text-laranja {
+        font-size: 2.1rem;
+        color: var(--laranja-claro);
+    }
+}
