@@ -356,11 +356,6 @@ html{
     }
 
 
-    div.carousel-inner {
-        max-height: 400px;
-    }
-
-
     .maps-endereco .localizacao .localizacao-content .titulo-maps{
         font-size: 3rem;
         margin-bottom: 20px;
