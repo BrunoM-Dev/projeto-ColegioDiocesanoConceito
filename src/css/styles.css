@@ -19,8 +19,6 @@ html {
     scroll-padding-top: 97px;
 }
 
-/* HEADER */
-
 .header {
     background-color: var(--roxo-intermediario);
     color: var(--branco-font);
@@ -57,7 +55,62 @@ nav .desktop-menu .item-menu:hover {
     color: var(--laranja-intermediario) ;
 }
 
-/* CARROUSEL */
+main .btn-flutuante {
+    position: fixed;
+    display: inline;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    font-size: 32px;
+    transition: all 0.5s;
+}
+
+main #btn-flutuante-maps {
+    right: 25px;
+    bottom: 85px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+main #btn-flutuante-wpp {
+    right: 25px;
+    bottom: 20px;
+    color: 	#25D366;
+    background-color: transparent;
+}
+
+main #btn-flutuante-maps:hover {
+    transform: scale(1.20);    
+    background-color: #d82626;
+
+}
+
+main #btn-flutuante-wpp:hover {
+    transform: scale(1.20);
+    background-color: #25D366;
+    color: #fff;
+}
+
+main #btn-flutuante-maps a {
+    color: #d82626;
+    transition: 0.5s;
+}
+main #btn-flutuante-maps a:hover {
+    color: #fff;
+}
+
+main #btn-flutuante-wpp a {
+    color: #25D366;
+    transition: 0.5s;
+}
+main #btn-flutuante-wpp a:hover {
+    color: #fff;
+}
+
 section.container{
     width: 90vw !important;
     padding-top: 40px;

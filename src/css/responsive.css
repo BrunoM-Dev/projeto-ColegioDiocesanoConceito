@@ -162,6 +162,46 @@ html{
         transform: translateY(0px);
     }
 
+    main .btn-flutuante {
+        position: fixed;
+        display: inline;
+        z-index: 99;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        font-size: 28px;
+        transition: all 0.5s;
+    }
+
+    main #btn-flutuante-maps {
+        right: 25px;
+        bottom: 85px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d82626;
+        color: #fff;
+    }
+    
+    main #btn-flutuante-wpp {
+        right: 25px;
+        bottom: 20px;
+        color: 	#fff;
+        background-color: #25D366;
+    }
+
+    main #btn-flutuante-wpp a {color: #fff;}
+    main #btn-flutuante-maps a {color: #fff;}
+
+    main #btn-flutuante-maps:hover {
+        transform: scale(1.20);    
+    }
+    
+    main #btn-flutuante-wpp:hover {
+        transform: scale(1.20);
+    }
+
     .informacoes-icone {
         border-radius: 10px 10px 0px 0px ;
      }
@@ -221,6 +261,7 @@ html{
 }
 
 @media (max-width: 700px) {
+
     .maps-endereco .localizacao {
         width: 100%;
         display: flex;
@@ -355,6 +396,22 @@ html{
         background-size: cover;
     }
 
+    main .btn-flutuante {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.5s;
+    }
+
+    main #btn-flutuante-maps {
+        right: 25px;
+        bottom: 70px;
+    }
+    
+    main #btn-flutuante-wpp {
+        right: 25px;
+        bottom: 20px;
+    }
 
     .maps-endereco .localizacao .localizacao-content .titulo-maps{
         font-size: 3rem;
