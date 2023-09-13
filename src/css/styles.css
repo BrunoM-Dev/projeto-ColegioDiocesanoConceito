@@ -99,7 +99,7 @@ main #btn-flutuante-maps a {
     color: #d82626;
     transition: 0.5s;
 }
-main #btn-flutuante-maps a:hover {
+main #btn-flutuante-maps:hover a {
     color: #fff;
 }
 
@@ -107,7 +107,7 @@ main #btn-flutuante-wpp a {
     color: #25D366;
     transition: 0.5s;
 }
-main #btn-flutuante-wpp a:hover {
+main #btn-flutuante-wpp:hover  a{
     color: #fff;
 }
 
