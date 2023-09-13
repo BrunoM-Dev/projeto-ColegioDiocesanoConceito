@@ -97,8 +97,13 @@ html{
         margin-bottom: 70px;
     }
 
+    .informacoes-icone .logo-sobre{
+        width: 280px;
+        height: 178px;
+    }
+
     .informacoes-text .box-paragrafo p{
-        font-size: 2rem; 
+        font-size: 1.8rem; 
      }
 
     .maps-endereco .localizacao .localizacao-content{
@@ -120,6 +125,9 @@ html{
 }
 
 @media (max-width: 800px) {
+    .header {
+        padding: 20px 0px;;
+    }
     
     nav .desktop-menu {
         display: none;
@@ -210,6 +218,11 @@ html{
         border-radius: 0px 0px 10px 10px ;
      }
 
+    .informacoes-icone .logo-sobre{
+        width: 310px;
+        height: 197px;
+    }
+
     .maps-endereco .localizacao {
         width: 100%;
         display: flex;
@@ -262,6 +275,23 @@ html{
 
 @media (max-width: 700px) {
 
+    header .logo .img-logo {
+        width: 90px;
+        height: 57px;
+        background-image: url("../images/menu-mobile/logo-branca-mobile.png");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .informacoes-icone .logo-sobre{
+        width: 330px;
+        height: 210px;
+    }
+
+    .informacoes-text .box-paragrafo p{
+        font-size: 2rem; 
+     }
+
     .maps-endereco .localizacao {
         width: 100%;
         display: flex;
@@ -277,7 +307,6 @@ html{
         display: flex;
         flex-direction: column;
         border-radius: 10px;
-
         padding: 15px;
     }
 
@@ -313,6 +342,10 @@ html{
 
 @media (max-width: 600px) {
 
+    .informacoes-icone .logo-sobre{
+        width: 300px;
+        height: 191px;
+    }
     .informacoes {
         display: flex;
         align-items:center ;
@@ -321,7 +354,7 @@ html{
         max-width: 90vw;
     }
     .informacoes-text .box-paragrafo p{
-        font-size: 2.2rem; 
+        font-size: 2rem; 
     }
     .informacoes-icone {
         display: flex;
@@ -413,6 +446,15 @@ html{
         bottom: 20px;
     }
 
+    .informacoes-icone .logo-sobre{
+        width: 280px;
+        height: 178px; 
+    }
+
+    .informacoes-text .box-paragrafo p{
+        font-size: 2rem; 
+     }
+
     .maps-endereco .localizacao .localizacao-content .titulo-maps{
         font-size: 3rem;
         margin-bottom: 20px;
@@ -438,7 +480,15 @@ html{
 @media (max-width: 450px) {
 
 
-    
+    .informacoes-icone .logo-sobre{
+        width: 270px;
+        height: 172px;
+    }
+
+    .informacoes-text .box-paragrafo p{
+        font-size: 2rem; 
+     }
+
     .informacoes-icone .logo{
         display: inline-flex;
         transform: scale(0.60);
@@ -468,4 +518,15 @@ html{
         font-size: 2.1rem;
         color: var(--laranja-claro);
     }
+}
+
+@media (max-width: 350px) {
+    .informacoes-icone .logo-sobre{
+        width: 250px;
+        height: 159px;
+    }
+
+    .informacoes-text .box-paragrafo p{
+        font-size: 1.4rem; 
+     }
 }
