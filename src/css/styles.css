@@ -107,7 +107,7 @@ main #btn-flutuante-wpp a {
     color: #25D366;
     transition: 0.5s;
 }
-main #btn-flutuante-wpp:hover  a{
+main #btn-flutuante-wpp:hover a{
     color: #fff;
 }
 
