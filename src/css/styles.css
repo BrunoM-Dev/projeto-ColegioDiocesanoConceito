@@ -51,6 +51,55 @@ nav .desktop-menu .item-menu
     transition: 0.15s;
 }
 
+nav .desktop-menu #item-menu-cursos {position: relative;}
+
+nav .desktop-menu #item-menu-cursos .aba-cursos {
+    position: absolute;
+    left: 50%;
+    top: 63px;
+    transform: translateX(-50%);
+    background-color: var(--roxo-intermediario);    
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+    padding: 0 30px;
+    box-shadow: 0px -1px 30px black;
+}
+
+nav .desktop-menu #item-menu-cursos:hover .aba-cursos {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--roxo-intermediario);    
+    overflow: hidden;
+    height: fit-content;
+    padding: 30px;
+}
+
+nav .desktop-menu #item-menu-cursos .aba-cursos li {
+
+    flex-direction: column;
+    background-color: var(--roxo-intermediario);
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+nav .desktop-menu #item-menu-cursos .aba-cursos li:hover {
+    background-color: var(--roxo-intermediario);
+    padding: 10px 0;
+    border-radius: 8px;
+    transform: scale(1.10);
+}
+
+nav .desktop-menu #item-menu-cursos .aba-cursos li a {
+    color: #fff;
+}
+nav .desktop-menu #item-menu-cursos .aba-cursos li:hover a {
+    color: var(--laranja-intermediario);
+}
+
 nav .desktop-menu .item-menu:hover {
     color: var(--laranja-intermediario) ;
 }

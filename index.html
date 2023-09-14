@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
     <!-- CSS AOS -->
     <link href="src/aos-master/dist/aos.css" rel="stylesheet">
-    <!-- CSS -->
+    <!-- CSS PRINCIPAL -->
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="src/css/responsive.css">
@@ -36,12 +36,35 @@
 
             <nav class="nav-bar col-8">
                 <ul class="desktop-menu">
-                    <li class="item-menu"><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li class="item-menu"><a href="#secao-cards" class="nav-link">Missão</a></li>
-                    <li class="item-menu"><a href="#secao-informacoes" class="nav-link">Sobre</a></li>
-                    <li class="item-menu"><a href="#secao-cursos" class="nav-link">Cursos</a></li>
-                    <li class="item-menu"><a href="#secao-endereco" class="nav-link">Visite-nos</a></li>
-                    <li class="item-menu"><a href="#footer_contacts" class="nav-link">Contato</a></li>
+                    <li class="item-menu">
+                        <a href="#inicio" class="nav-link">Inicio</a>
+                    </li>
+
+                    <li class="item-menu">
+                        <a href="#secao-cards" class="nav-link">Missão</a>
+                    </li>
+
+                    <li class="item-menu">
+                        <a href="#secao-informacoes" class="nav-link">Sobre</a>
+                    </li>
+
+                    <li class="item-menu" id="item-menu-cursos">
+                        <a href="#secao-cursos" class="nav-link">Cursos</a>
+                        <ul class="aba-cursos">
+                            <li><a href="cursos/infantil.html">Educação Infantil</a></li>
+                            <li><a href="">Ensino Fundamental</a></li>
+                            <li><a href="">Ensino Médio</a></li>
+                            <li><a href="">Atividades Extracurriculares</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="item-menu">
+                        <a href="#secao-endereco" class="nav-link">Visite-nos</a>
+                    </li>
+
+                    <li class="item-menu">
+                        <a href="#footer_contacts" class="nav-link">Contato</a>
+                    </li>
                 </ul>
 
                 <div class="mobile-menu-icon">
@@ -273,8 +296,8 @@
         </section>
     </main>
 
-    <footer>
-        <div id="footer_content" data-aos="fade-up">
+    <footer  data-aos="fade-up">
+        <div id="footer_content">
             <div id="footer-logo">
                 <img src="src/images/menu-mobile/logo-branca-mobile.png" alt="">
                 <a href="#inicio"><button class="btn"><i class="bi bi-arrow-up-circle-fill btn-voltar"></i></button></a>
@@ -306,13 +329,13 @@
                     <h2>Contato</h2>
                 </li>
                 <li> 
-                    <a href="" class="footer-link"><i class="bi bi-envelope-at-fill icone-email"></i> Email Finaceiro</a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrkWHsGftjHqjBBqQNBZlXkPnJgmbvTqDFwWJVhsZGVMNxZVzbKCDBWlKQVTGwDPVhTKLq" target="_blank" class="footer-link"><i class="bi bi-envelope-at-fill icone-email"></i> Email Direção</a>
                 </li>
                 <li> 
-                    <a href="" class="footer-link"><i class="bi bi-envelope-at-fill icone-email"></i> Email Coordenação</a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMVkvRlsbcRBdNMTQmVjBGgcFPTSfzzdVlPCdDrpLPWHjwwqSpdRMhTlVNFtDTFrFBrnsfp" target="_blank" class="footer-link"><i class="bi bi-envelope-at-fill icone-email"></i> Email Secretaria</a>
                 </li>
                 <li>
-                    <a href="https://api.whatsapp.com/send?phone=5588997137570&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21+%F0%9F%98%8A" target="_blank" class="footer-link"><i class="bi bi-telephone-fill icone-faleconosco"></i> Fale conosco</a>
+                    <a href="https://api.whatsapp.com/send?phone=5588997137570&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21+%F0%9F%98%8A" target="_blank" class="footer-link" ><i class="bi bi-telephone-fill icone-faleconosco"></i> Fale conosco</a>
                 </li>
             </ul>
 
@@ -359,5 +382,4 @@
 <!--[OKAY] INSERIR EMAILS (FOOTER) -->
 <!--[OKAY] COPYRIGHT (FOOTER) -->
 <!-- CRIAR PAGINAS (CURSOS) -->
-<!-- MENU ABA CURSOS (HEADER) -->
-<!-- BOTAO MAPS (MAPS) -->
+<!--[OKAY] MENU ABA CURSOS (HEADER) --> 

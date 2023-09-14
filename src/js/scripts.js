@@ -3,6 +3,7 @@ const menu = {
     classeMobile: '.mobile-menu',
     classeDesktop: 'desktop-menu'
 }
+
 const referenciaMobile = document.querySelector('#secao-endereco').offsetTop;
 
 function menuShow(){    
