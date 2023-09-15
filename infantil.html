@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diocesano Conceito</title>
+        <link rel="shortcut icon" href="src/images/favicon.png" type="image/png">
+    
+        <!-- EXTERNOS -->
+        <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
+        <link href="src/aos-master/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="src/bootstrap-icons/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="src/fontawesome-free-6.4.2-web/css/all.min.css">
+        <script src="src/bootstrap/js/bootstrap.min.js"></script>
+        <script src="src/aos-master/dist/aos.js"></script>
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="src/css/reset.css">
+        <link rel="stylesheet" href="src/css/styles.css">
+        <link rel="stylesheet" href="src/css/responsive.css">
+    
+        <!-- JAVASCRIPT-->
+        <script src="src/js/scripts.js" defer></script>
+    </head>
+<body>
+    <header class="container-fluid header">
+        <div class="row justify-content-space-between align-items-center">
+            <a href="#inicio" class="logo col-3">
+                <h1 class="img-logo"></h1>
+            </a>
+
+            <nav class="nav-bar col-8">
+                <ul class="desktop-menu">
+                    <li class="item-menu">
+                        <a href="#inicio" class="nav-link">Inicio</a>
+                    </li>
+
+                    <li class="item-menu">
+                        <a href="#secao-cards" class="nav-link">Missão</a>
+                    </li>
+
+                    <li class="item-menu">
+                        <a href="#secao-informacoes" class="nav-link">Sobre</a>
+                    </li>
+
+                    <li class="item-menu" id="item-menu-cursos">
+                        <a href="#secao-cursos" class="nav-link">Cursos</a>
+                        <ul class="aba-cursos">
+                            <li><a href="cursos/infantil.html">Educação Infantil</a></li>
+                            <li><a href="">Ensino Fundamental</a></li>
+                            <li><a href="">Ensino Médio</a></li>
+                            <li><a href="">Atividades Extracurriculares</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="item-menu">
+                        <a href="#secao-endereco" class="nav-link">Visite-nos</a>
+                    </li>
+
+                    <li class="item-menu">
+                        <a href="#footer_contacts" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+
+                <div class="mobile-menu-icon">
+                    <button onClick="menuShow()"><img src="src/images/menu-mobile/button_mobile.svg" alt="" class="icone-menu-mobile"></button>
+                </div>
+            </nav>
+
+            <nav class="mobile-menu">
+                <ul class="menu">
+                    <li class="item-menu"><a href="#inicio" class="nav-link" onClick="menuShow()">Inicio</a></li>
+                    <li class="item-menu"><a href="#secao-cards" class="nav-link" onClick="menuShow()">Missão</a></li>
+                    <li class="item-menu"><a href="#secao-informacoes" class="nav-link" onClick="menuShow()">Sobre</a></li>
+                    <li class="item-menu"><a href="#secao-cursos" class="nav-link" onClick="menuShow()">Cursos</a></li>
+                    <li class="item-menu"><a href="#secao-endereco" class="nav-link" onClick="menuShow()">Visite-nos</a></li>
+                    <li class="item-menu"><a href="#footer_contacts" onClick="menuShow()" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <button class="btn-flutuante" id="btn-flutuante-maps">
+            <a href="https://www.google.com/maps/place/Diocesan+College+of+Crato/@-7.235144,-39.410814,15z/data=!4m6!3m5!1s0x7a18484451aea13:0xb28923c9ecc5939d!8m2!3d-7.2351437!4d-39.4108141!16s%2Fg%2F1tfq4v_7?hl=pt-BR&entry=ttu" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+        </button>
+        <button class="btn-flutuante" id="btn-flutuante-wpp">
+            <a href="https://api.whatsapp.com/send?phone=5588997137570&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21+%F0%9F%98%8A" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </button>
+
+        <section class="secao-inicial container-fluid">
+            <div class="overlay"></div>
+            <div class="d-flex justify-content-center">
+                <div class="titulo">
+                    <h1>Educação Infantil</h1>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -416,6 +416,22 @@ html{
         text-align: center;
         height: 80px;
     }
+
+    #footer_content {
+        justify-content: space-evenly;
+        padding: 30px 30px 15px 30px;
+        align-items: center;
+        height: 70vh;
+    }
+
+    #footer_social_media {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    } 
+
 }
 
 @media (max-width: 500px) {
@@ -519,6 +535,16 @@ html{
     span.text-laranja {
         font-size: 2.1rem;
         color: var(--laranja-claro);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        gap: 20px;
+        padding: 20px 10px;
+        align-items: center;
+        justify-content: center;
+
     }
 }
 
