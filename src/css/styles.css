@@ -745,6 +745,11 @@ main .secao-inicial {
     background-attachment: fixed;
 }
 
+#infantil {background-image: url("../images/artigos-cursos/infantil-guia-2.JPG");}
+#fundamental {background-image: url("../images/artigos-cursos/fudamental-guia.jfif");}
+#medio {background-image: url("../images/artigos-cursos/medio-guia.jpg");}
+#extracurricular {background-image: url("../images/artigos-cursos/extracurricular-guia.JPG");}
+
 main .secao-conteudo.container {
     padding-top: 60px !important;
 }
