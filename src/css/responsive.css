@@ -292,7 +292,7 @@ html{
 
     .informacoes-text .box-paragrafo p{
         font-size: 2rem; 
-     }
+    }
 
     .maps-endereco .localizacao {
         width: 100%;
@@ -319,10 +319,12 @@ html{
         white-space: nowrap;
         overflow: hidden;
     }
+
     span.text-laranja {
         font-size: 3rem;
         color: var(--laranja-claro);
     }
+
     .maps-endereco .localizacao .localizacao-content .text-endereco {
         width: 90%;;
         font-size:1.6rem;
@@ -340,6 +342,11 @@ html{
     .maps-endereco .icone-localizacao img {
         height: 100px;
     }
+
+    main .secao-conteudo , .secao-video {
+        width: 80vw !important;
+    }
+
 }
 
 @media (max-width: 600px) {

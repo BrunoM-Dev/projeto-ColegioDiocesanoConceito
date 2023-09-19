@@ -11,7 +11,7 @@
         <link href="src/aos-master/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="src/bootstrap-icons/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="src/fontawesome-free-6.4.2-web/css/all.min.css">
-        <script src="src/bootstrap/js/bootstrap.min.js"></script>
+        <script src="src/bootstrap/js/bootstrap.min.js" defer></script>
         <script src="src/aos-master/dist/aos.js"></script>
 
         <!-- CSS -->
@@ -47,7 +47,7 @@
                         <li class="item-menu" id="item-menu-cursos">
                             <a href="#secao-cursos" class="nav-link">Cursos</a>
                             <ul class="aba-cursos">
-                                <li><a href="cursos/infantil.html">Educação Infantil</a></li>
+                                <li><a href="./infantil.html">Educação Infantil</a></li>
                                 <li><a href="">Ensino Fundamental</a></li>
                                 <li><a href="">Ensino Médio</a></li>
                                 <li><a href="">Atividades Extracurriculares</a></li>
@@ -220,7 +220,7 @@
             <section class="container-fluid" id="secao-cursos">
                 <div class="container" data-aos="fade-up">
                     <h2 class="titulo-secao">Trilha de Ensino</h2>
-                    <div class="row justify-content-center cursos" data-aos="fade-up">
+                    <div class="row justify-content-center cursos" ">
                         <div class="curso-card col-11 col-lg-3 mb-2 mb-lg-4 mt-lg-5">
                             <div class="curso-imagem">
                                 <img src="src/images/secao-cursos/infatil-card.jpg" alt="Imagem Educação infantil">
@@ -228,7 +228,7 @@
                             <div class="curso-info">
                                 <h3>Educação <br> Infantil</h3>
                                 <p class="descricao-curso">Nossa Educação Infantil é um ambiente acolhedor e estimulante, projetado para crianças em suas primeiras etapas de aprendizado. Com um currículo cuidadosamente elaborado, enfatizamos o desenvolvimento cognitivo, social e emocional.</p>
-                                <button class="botao-saiba-mais">Saiba Mais</button>
+                                <a href="./infantil.html"><button class="botao-saiba-mais">Saiba Mais</button></a>
                             </div>
                         </div>
 
@@ -239,7 +239,7 @@
                             <div class="curso-info">
                                 <h3>Ensino <br> Fundamental</h3>
                                 <p class="descricao-curso">Nosso Ensino Fundamental é a base sólida para o sucesso acadêmico. Com ênfase em habilidades de leitura, escrita e matemática, nossos alunos exploram uma variedade de disciplinas em um ambiente de aprendizado colaborativo. </p>
-                                <button class="botao-saiba-mais">Saiba Mais</button>
+                                <a href=""><button class="botao-saiba-mais">Saiba Mais</button></a>
                             </div>
                         </div>
                         <div class="curso-card col-11 col-lg-3 mb-2 mb-lg-4 mt-lg-5">
@@ -249,11 +249,11 @@
                             <div class="curso-info">
                                 <h3>Ensino <br> Médio</h3>
                                 <p class="descricao-curso">O Ensino Médio é um momento de crescimento pessoal e acadêmico. Nossos alunos se envolvem em cursos avançados, participam de projetos de pesquisa e são preparados para os exames mais importantes na sua vida acadêmica.</p>
-                                <button class="botao-saiba-mais">Saiba Mais</button>
+                                <a href=""><button class="botao-saiba-mais">Saiba Mais</button></a>
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center cursos mt-5 mt-lg-1" >
+                    <div class="row justify-content-center cursos mt-5 mt-lg-1" data-aos="fade-up" >
                         <div class="curso-card col-11 col-lg-10 mt-4 mb-5 mb-lg-5 mt-lg-4">
                             <div class="curso-imagem" id="extracurricular-image">
                                 <img src="src/images/secao-cursos/extracurricular-card.JPG" alt="Imagem Atividades extracurriculares">
@@ -261,7 +261,7 @@
                             <div class="curso-info">
                                 <h3>Atividades Extracurriculares</h3>
                                 <p class="descricao-curso">Além dos cursos acadêmicos, oferecemos uma ampla gama de atividades extracurriculares que enriquecem a experiência dos alunos. Isso inclui esportes competitivos, artes cênicas, música, clubes acadêmicos e muito mais. </p>
-                                <button class="botao-saiba-mais">Saiba Mais</button>
+                                <a href=""><button class="botao-saiba-mais">Saiba Mais</button></a>
                             </div>
                         </div>
                     </div>
@@ -292,14 +292,14 @@
             </section>
         </main>
 
-        <footer  data-aos="fade-up">
+        <footer>
             <div id="footer_content">
-                <div id="footer-logo">
+                <div id="footer-logo"  data-aos="fade-up">
                     <img src="src/images/menu-mobile/logo-branca-mobile.png" alt="">
                     <a href="#inicio"><button class="btn"><i class="bi bi-arrow-up-circle-fill btn-voltar"></i></button></a>
                 </div>
 
-                <ul class="footer-list">
+                <ul class="footer-list"  data-aos="fade-up">
                     <li>
                         <h2>Menu</h2>
                     </li>
@@ -320,7 +320,7 @@
                     </li>
                 </ul>
 
-                <ul class="footer-list">
+                <ul class="footer-list"  data-aos="fade-up">
                     <li>
                         <h2>Contato</h2>
                     </li>
@@ -335,7 +335,7 @@
                     </li>
                 </ul>
 
-                <div id="footer_contacts" data-aos="fade-up">
+                <div id="footer_contacts"  data-aos="fade-up">
                     <div id="footer_social_media">
                         <a href="https://www.instagram.com/diocesanodocratoconceito/" class="footer-link" target="_blank" id="instagram">
                             <i class="bi bi-instagram"></i>
@@ -372,10 +372,3 @@
         <script> AOS.init({duration: 700}); </script>
     </body>
 </html>
-
-<!--[OKAY] BOTAO FIXO TELA - MAPS e WHATSAPP -->
-<!--[OKAY] ALTERAÇÂO GIF (SOBRE) -->
-<!--[OKAY] INSERIR EMAILS (FOOTER) -->
-<!--[OKAY] COPYRIGHT (FOOTER) -->
-<!-- CRIAR PAGINAS (CURSOS) -->
-<!--[OKAY] MENU ABA CURSOS (HEADER) --> 

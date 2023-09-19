@@ -1,9 +1,4 @@
-const menu = {
-    tag: 'header',
-    classeMobile: '.mobile-menu',
-    classeDesktop: 'desktop-menu'
-}
-
+const menu = {tag: 'header', classeMobile: '.mobile-menu', classeDesktop: 'desktop-menu'}
 const referenciaMobile = document.querySelector('#secao-endereco').offsetTop;
 
 function menuShow(){    
@@ -28,19 +23,3 @@ function menuHidden() {
     }
 }
 window.addEventListener('scroll', menuHidden);
-
-
-const botoesSaibaMais = document.querySelectorAll(".botao-saiba-mais");
-botoesSaibaMais.forEach(function (botao) {
-    botao.addEventListener("click", function () {
-        const descricaoCurso = this.parentElement.querySelector(".descricao-curso");
-        descricaoCurso.style.maxHeight = descricaoCurso.style.maxHeight ? null : descricaoCurso.scrollHeight + "px";
-        if (botao.innerHTML === "Saiba Mais"){
-            botao.classList.add("efeito-clicked")
-            botao.innerHTML = "Voltar"
-        } else {
-            botao.classList.remove("efeito-clicked")
-            botao.innerHTML = "Saiba Mais"
-        }
-    });
-});
