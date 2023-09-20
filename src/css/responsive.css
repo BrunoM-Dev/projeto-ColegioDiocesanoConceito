@@ -343,8 +343,12 @@ html{
         height: 100px;
     }
 
-    main .secao-conteudo , .secao-video {
+    main .secao-conteudo , main .secao-video {
         width: 80vw !important;
+    }
+
+    main .secao-video iframe {
+        height: 40vw;
     }
 
 }

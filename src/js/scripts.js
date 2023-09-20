@@ -1,5 +1,5 @@
 const menu = {tag: 'header', classeMobile: '.mobile-menu', classeDesktop: 'desktop-menu'}
-const referenciaMobile = document.querySelector('#secao-endereco').offsetTop;
+const referenciaMenuHidden = document.querySelector('#secao-endereco').offsetTop;
 
 function menuShow(){    
     const menuMobile = document.querySelector(menu.classeMobile);
@@ -16,10 +16,12 @@ function menuHidden() {
     const scrollY = window.scrollY;
     const header = document.querySelector(menu.tag)
 
-    if (scrollY >= referenciaMobile) {
+    if (scrollY >= referenciaMenuHidden) {
         header.classList.add('oculto');
     } else {
         header.classList.remove('oculto');
     }
 }
+
+window.addEventListener('scroll', typingTextAnimation(referenciaMenuHidden))
 window.addEventListener('scroll', menuHidden);
