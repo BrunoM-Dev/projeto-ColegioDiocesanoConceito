@@ -792,7 +792,8 @@ main .secao-conteudo .article p {
     font-size: 1.8rem;
     font-family: 'Gilroy-light', sans-serif;
     text-align: justify;
-    word-spacing: 0;
+    word-spacing: 1px !important;
+    line-height: 1.5;           
 }
 
 main .secao-video.container {
