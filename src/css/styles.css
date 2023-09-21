@@ -345,6 +345,10 @@ div.carousel-inner  {
     object-fit: cover;
 }
 
+#card-ensino-medio{
+    object-position:50%;
+}
+
 #extracurricular-image img{
     object-position: 50% 35%;
     height: 180px;
