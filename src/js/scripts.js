@@ -12,7 +12,7 @@ function menuShow(){
         document.querySelector('.icone-menu-mobile').src = "src/images/menu-mobile/close_mobile.svg";
     }
 }
-function menuHidden() {
+function menuHidden(){
     const scrollY = window.scrollY;
     const header = document.querySelector(menu.tag)
 
@@ -23,5 +23,4 @@ function menuHidden() {
     }
 }
 
-window.addEventListener('scroll', typingTextAnimation(referenciaMenuHidden))
 window.addEventListener('scroll', menuHidden);
