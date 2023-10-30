@@ -853,9 +853,22 @@ main .secao-conteudo .article p.text-article {
     margin-bottom: 30px;
     line-height: 1.3;
 }
+
  main .secao-conteudo .table-turmas table  {
     width: 90%;
 }   
+
+
+main .secao-conteudo .table-turmas table tr th,td {
+    border: 3px solid black;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+main .secao-conteudo .table-turmas table th {
+    background-color: #41afa88f;
+}
 
 @media (max-width: 800px) {
     main .secao-conteudo .table-turmas table  {
@@ -863,13 +876,8 @@ main .secao-conteudo .article p.text-article {
     }  
 }
 
-main .secao-conteudo .table-turmas table tr th,td {
-    border: 3px solid black;
-    padding: 10px;
-    font-size: 2rem;
-    text-align: center;
- }
-
- main .secao-conteudo .table-turmas table th {
-    background-color: #41afa88f;
- }
+main .secao-conteudo .article ul li {
+    list-style-type: disc;
+    font-size: 1.7rem;
+    font-family: 'Gilroy-light', sans-serif;
+}
