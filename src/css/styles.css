@@ -811,11 +811,11 @@ main .secao-conteudo.container {
     padding-top: 60px !important;
 }
 
-main .secao-inicial .titulo {
+main .secao-inicial .titulo-cursos {
     z-index: 2;
 }
 
-main .secao-inicial .titulo h1 {
+main .secao-inicial .titulo-cursos h1 {
     font-size: 5rem;
     margin-top: 30px;
     text-align: center;
@@ -835,36 +835,41 @@ main .secao-conteudo {
     width: 60vw !important;
 }
 
-
 main .secao-conteudo .article {
     width: 100%;
     margin-bottom: 40px;
 }
 
-main .secao-conteudo .article h2 {
+main .secao-conteudo .article h2.subtitulo-article {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-main .secao-conteudo .article p {
-    font-size: 1.8rem;
+main .secao-conteudo .article p.text-article {
+    font-size: 2rem;
     font-family: 'Gilroy-light', sans-serif;
     text-align: justify;
     word-spacing: 1px !important;
-    line-height: 1.5;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+ main .secao-conteudo .table-turmas table  {
+    width: 90%;
+}   
+
+@media (max-width: 800px) {
+    main .secao-conteudo .table-turmas table  {
+        width: 100%;
+    }  
 }
 
-main .secao-video.container {
-    padding-top: 20px !important;
-}
+main .secao-conteudo .table-turmas table tr th,td {
+    border: 3px solid black;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+ }
 
-main .secao-video {
-    width: 60vw !important;
-    margin-bottom: 40px;
-}
-
-main .secao-video iframe {
-    width: 100%;
-    height: 30vw;
-    border-radius: 15px;
-}
+ main .secao-conteudo .table-turmas table th {
+    background-color: #41afa88f;
+ }
