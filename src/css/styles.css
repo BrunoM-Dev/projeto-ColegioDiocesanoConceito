@@ -880,4 +880,5 @@ main .secao-conteudo .article ul li {
     list-style-type: disc;
     font-size: 1.7rem;
     font-family: 'Gilroy-light', sans-serif;
+    margin-bottom: 10px;
 }
