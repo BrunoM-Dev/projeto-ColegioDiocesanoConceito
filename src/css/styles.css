@@ -869,7 +869,7 @@ main .secao-conteudo .table-turmas table tr th,td {
 }
 
 main .secao-conteudo .table-turmas table th {
-    background-color: #41afa88f;
+    background-color: var(--verde-claro);
 }
 
 @media (max-width: 800px) {
