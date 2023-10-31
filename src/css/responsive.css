@@ -2,15 +2,6 @@ html{
     font-size: 62.5%;
 }
 
-:root {
-    --roxo-escuro:#57167c;
-    --roxo-intermediario:#6e3983;
-    --roxo-claro:#965aa3;
-    --laranja-escuro:#f58634;    
-    --laranja-intermediario:#f9a132;
-    --laranja-claro:#f2b448;
-    --branco-font: #fff;
-}
 
 /* RESPONSIVO HEADER */
 
@@ -500,7 +491,7 @@ html{
 
     .maps-endereco .localizacao .localizacao-content .text-endereco {
         width: 100%;;
-        font-size:1.3rem;
+        font-size:1.6rem;
         z-index: 2;
         text-align: justify;
     }

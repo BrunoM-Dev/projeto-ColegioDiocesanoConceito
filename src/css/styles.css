@@ -1,10 +1,12 @@
 :root {
-    --roxo-escuro: #57167c;
-    --roxo-intermediario: #6e3983;
-    --roxo-claro: #965aa3;
+    --verde-escuro: #006414;
+    --verde-intermediario: #009929;
+    --verde-claro: #5ccb5f;
+
     --laranja-escuro: #f58634;
     --laranja-intermediario: #f9a132;
     --laranja-claro: #f2b448;
+    
     --branco-font: #fff;
 
     --color-neutral-0: #0e0c0c;
@@ -20,7 +22,7 @@ html {
 }
 
 .header {
-    background-color: var(--roxo-intermediario);
+    background-color: var(--verde-intermediario);
     color: var(--branco-font);
     max-height: 97px;
     z-index: 99;
@@ -61,7 +63,7 @@ nav .desktop-menu #item-menu-cursos .aba-cursos {
     left: 50%;
     top: 63px;
     transform: translateX(-50%);
-    background-color: var(--roxo-intermediario);
+    background-color: var(--verde-intermediario);
     overflow: hidden;
     height: 0;
     transition: 0.5s;
@@ -75,7 +77,7 @@ nav .desktop-menu #item-menu-cursos:hover .aba-cursos {
     flex-direction: column;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--roxo-intermediario);
+    background-color: var(--verde-intermediario);
     overflow: hidden;
     height: fit-content;
     padding: 30px;
@@ -84,13 +86,13 @@ nav .desktop-menu #item-menu-cursos:hover .aba-cursos {
 nav .desktop-menu #item-menu-cursos .aba-cursos li {
 
     flex-direction: column;
-    background-color: var(--roxo-intermediario);
+    background-color: var(--verde-intermediario);
     padding: 10px 0;
     border-radius: 8px;
 }
 
 nav .desktop-menu #item-menu-cursos .aba-cursos li:hover {
-    background-color: var(--roxo-intermediario);
+    background-color: var(--verde-intermediario);
     padding: 10px 0;
     border-radius: 8px;
     transform: scale(1.10);
@@ -228,7 +230,7 @@ div.carousel-inner {
 }
 
 #card-1 .card-item-top {
-    background-color: var(--roxo-claro);
+    background-color: var(--verde-claro);
 }
 
 #card-2 .card-item-top {
@@ -287,7 +289,7 @@ div.carousel-inner {
 }
 
 #card-1 {
-    background-color: var(--roxo-intermediario);
+    background-color: var(--verde-intermediario);
 }
 
 #card-2 {
@@ -299,7 +301,7 @@ div.carousel-inner {
 }
 
 #card-1 .img-card {
-    border: 3px solid var(--roxo-intermediario);
+    border: 3px solid var(--verde-intermediario);
 }
 
 #card-2 .img-card {
@@ -322,7 +324,7 @@ div.carousel-inner {
     padding: 5px 0px;
     margin-bottom: 20px;
     text-shadow: 1px 0px 1px black;
-    color: var(--roxo-intermediario);
+    color: var(--verde-intermediario);
 
 }
 
@@ -354,7 +356,7 @@ div.carousel-inner {
     transform: scale(1.05);
     padding: 0px;
     border-radius: 8px;
-    box-shadow: 4px 2px 10px var(--roxo-claro);
+    box-shadow: 4px 2px 10px var(--verde-claro);
     display: inline-flex;
     flex-direction: column;
     overflow: hidden;
@@ -425,7 +427,7 @@ div.carousel-inner {
 }
 
 .curso-card .curso-info .botao-saiba-mais.efeito-clicked {
-    background-color: var(--roxo-intermediario);
+    background-color: var(--verde-intermediario);
 }
 
 
@@ -470,7 +472,7 @@ div.carousel-inner {
 }
 
 .informacoes-text {
-    background-color: var(--roxo-intermediario);
+    background-color: var(--verde-intermediario);
     color: var(--branco-font);
     height: 400px;
     border-radius: 0px 10px 10px 0px;
@@ -692,7 +694,7 @@ footer {
 }
 
 #footer-logo a:hover .bi.bi-arrow-up-circle-fill.btn-voltar {
-    color: #6E3983;
+    color: var(--verde-intermediario);
 }
 
 #footer_social_media {
@@ -731,7 +733,7 @@ footer {
 
 #instagram:hover .bi.bi-instagram, #youtube:hover .bi.bi-youtube, #tiktok:hover .bi.bi-tiktok, #twitter:hover .bi-twitter, #linkedin:hover .bi.bi-linkedin {
     transform: scale(1.1);
-    color: #6E3983;
+    color: var(--verde-intermediario);
 }
 
 .footer-list {
@@ -749,7 +751,7 @@ footer {
 }
 
 .footer-list .footer-link:hover {
-    color: #6E3983;
+    color: var(--verde-intermediario);
 }
 
 .bi.bi-envelope-at-fill.icone-email,
