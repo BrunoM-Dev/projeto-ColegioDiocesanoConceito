@@ -586,14 +586,24 @@ html{
 @media screen and (max-width: 426px) {
     #footer_content {
         gap: 20px;
-        padding: 20px 10px;
+        padding-right: 10px;
+        padding-left: 10px;
         align-items: center;
         justify-content: center;
 
     }
+    
+    #footer_social_media {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    } 
+
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     .informacoes-icone .logo-sobre{
         width: 250px;
         height: 159px;
@@ -602,4 +612,21 @@ html{
     .informacoes-text .box-paragrafo p{
         font-size: 1.4rem; 
      }
+       
+     #footer_content {
+        gap: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+    }
+
+     #footer_social_media {
+         display: flex;
+         justify-content: center;
+         gap: 1rem;
+         margin-top: 0;
+         margin-bottom: 0;
+     } 
 }

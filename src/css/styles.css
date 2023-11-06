@@ -682,6 +682,7 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 3rem 3%;
+    position: relative;
 }
 
 #footer-logo {
@@ -787,6 +788,7 @@ footer {
 }
 
 #footer_copyright {
+    position: relative;
     display: flex;
     justify-content: center;
     background-color: var(--color-neutral-0);
@@ -827,6 +829,10 @@ main .secao-inicial {
 
 #extracurricular {
     background-image: url("../images/artigos-cursos/extracurricular-guia.JPG");
+}
+
+main .secao-inicial {
+    width: 100vw !important;
 }
 
 main .secao-conteudo.container {
