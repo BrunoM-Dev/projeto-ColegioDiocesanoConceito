@@ -435,6 +435,9 @@ html{
         text-align: center;
         height: 80px;
     }
+    .secao-maps a.btn-maps {
+        margin: 10%;
+    }
 
     #footer_content {
         justify-content: space-evenly;

@@ -18,7 +18,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    scroll-padding-top: 97px;
+    scroll-padding-top: 30px;
 }
 
 .header {
@@ -504,7 +504,8 @@ div.carousel-inner {
 .secao-maps .secao-maps-top {
     position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: calc(100vh);
     background-image: url('../images/secao-maps/imagem-do-colegio.png');
@@ -608,6 +609,34 @@ span.text-laranja {
     height: 150px;
 }
 
+.secao-maps a.btn-maps {
+    background-color: var(--verde-intermediario);
+    justify-items: center;
+    text-align: center;
+    margin: 5%;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px var(--verde-intermediario);
+    animation: floating 2s ease-in-out infinite ;
+    z-index: 2;
+    transition: all 0.7s;
+}
+
+.secao-maps a.btn-maps:hover {
+    background-color:#fff;
+}
+
+.secao-maps a.btn-maps:hover  i{
+    color: var(--verde-intermediario);
+}
+
+.secao-maps a.btn-maps i {
+    color: white ;
+    font-size: 35px;
+    text-align: center;    
+    transition: all 0.7s;
+}
 
 @keyframes floating {
     0% {
@@ -620,20 +649,6 @@ span.text-laranja {
 
     100% {
         transform: translateY(0px);
-    }
-}
-
-@keyframes floatingMobile {
-    0% {
-        transform: translateX(0px);
-    }
-
-    50% {
-        transform: translateX(10px);
-    }
-
-    100% {
-        transform: translateX(0px);
     }
 }
 
