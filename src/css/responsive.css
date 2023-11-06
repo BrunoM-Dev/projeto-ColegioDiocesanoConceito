@@ -83,6 +83,10 @@ html{
         text-align: justify;
     }
 
+    .texto-verde {
+        font-size:1.8rem;
+    }
+
     .maps-endereco .icone-localizacao img {
         height: 130px;
     }
@@ -265,6 +269,10 @@ html{
         text-align: justify;
     }
 
+    .texto-verde {
+        font-size:2rem;
+    }
+
     .maps-endereco .icone-localizacao{
         width: 50%;
         border-radius: 10px;
@@ -338,6 +346,10 @@ html{
         font-size:1.6rem;
         z-index: 2;
         text-align: justify;
+    }
+
+    .texto-verde {
+        font-size:1.6rem;
     }
 
     .maps-endereco .icone-localizacao{
@@ -422,8 +434,13 @@ html{
         width: 100%;;
         font-size:1.5rem;
         z-index: 2;
-        text-align: justify;
+        text-align: justify; 
     }
+
+    .texto-verde {
+        font-size:1.5rem;
+    }
+
     .maps-endereco .icone-localizacao{
         width: 100%;
 
@@ -514,6 +531,10 @@ html{
         font-size:1.6rem;
         z-index: 2;
         text-align: justify;
+    }
+
+    .texto-verde {
+        font-size:1.6rem;
     }
 }
 
