@@ -59,6 +59,10 @@ html{
         text-align: justify;
     }
 
+    .texto-verde {
+        font-size:2rem;
+ !important    }
+
 }
 
 @media (max-width: 1024px) {
@@ -84,7 +88,7 @@ html{
     }
 
     .texto-verde {
-        font-size:1.8rem;
+        font-size:1.8rem !important;
     }
 
     .maps-endereco .icone-localizacao img {
@@ -271,7 +275,7 @@ html{
 
     .texto-verde {
         font-size:2rem;
-    }
+ !important    }
 
     .maps-endereco .icone-localizacao{
         width: 50%;
@@ -349,7 +353,7 @@ html{
     }
 
     .texto-verde {
-        font-size:1.6rem;
+        font-size:1.6rem !important;
     }
 
     .maps-endereco .icone-localizacao{
@@ -438,7 +442,7 @@ html{
     }
 
     .texto-verde {
-        font-size:1.5rem;
+        font-size:1.5rem !important;
     }
 
     .maps-endereco .icone-localizacao{
@@ -534,7 +538,7 @@ html{
     }
 
     .texto-verde {
-        font-size:1.6rem;
+        font-size:1.6rem !important;
     }
 }
 
