@@ -60,8 +60,7 @@ html{
     }
 
     .texto-verde {
-        font-size:2rem;
- !important    }
+        font-size:2rem !important ;   }
 
 }
 
@@ -274,8 +273,7 @@ html{
     }
 
     .texto-verde {
-        font-size:2rem;
- !important    }
+        font-size:2rem !important;    }
 
     .maps-endereco .icone-localizacao{
         width: 50%;
