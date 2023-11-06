@@ -591,8 +591,13 @@ div.carousel-inner {
     text-align: justify;
 }
 
-span.text-laranja {
+span.titulo-laranja {
     font-size: 6rem;
+    color: var(--laranja-claro);
+}
+
+span.texto-verde {
+    font-size: 2rem;
     color: var(--laranja-claro);
 }
 
