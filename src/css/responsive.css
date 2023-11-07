@@ -19,9 +19,6 @@ html{
     --color-neutral-40: #f5f5f5;
 }
 
-
-/* RESPONSIVO HEADER */
-
 .mobile-menu-icon {
     display: none;
 }
@@ -34,8 +31,6 @@ html{
 .oculto{
     opacity: 0;
 }
-
-
 
 @media (max-width: 1150px) {
     .maps-endereco .localizacao .localizacao-content .titulo-maps{

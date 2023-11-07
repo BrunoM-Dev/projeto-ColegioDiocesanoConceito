@@ -431,7 +431,6 @@ div.carousel-inner {
 }
 
 
-
 #secao-informacoes {
     background-color: var(--laranja-claro);
     margin-top: 40px;
@@ -477,7 +476,6 @@ div.carousel-inner {
     height: 400px;
     border-radius: 0px 10px 10px 0px;
 }
-
 
 .informacoes-text .box-paragrafo {
     width: 100%;
@@ -536,7 +534,6 @@ div.carousel-inner {
     color: var(--branco-font);
     z-index: 2;
 }
-
 
 .typing-animation {
     animation: blinkCursor steps(40) 500ms infinite normal, typing 4s steps(60) 1s normal both;
@@ -656,7 +653,6 @@ span.texto-verde {
         transform: translateY(0px);
     }
 }
-
 
 .maps-right {
     display: flex;
@@ -798,8 +794,6 @@ footer {
 }
 
 
-/* PAGINAS CURSOS */
-
 main .secao-inicial {
     position: relative;
     display: flex;
@@ -886,11 +880,9 @@ main .secao-conteudo .article p.text-article {
 }
 
 
-
- main .secao-conteudo .table-turmas table  {
+main .secao-conteudo .table-turmas table  {
     width: 90%;
 }   
-
 
 main .secao-conteudo .table-turmas table tr th,td {
     border: 3px solid black;
