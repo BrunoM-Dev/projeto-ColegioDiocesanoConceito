@@ -36,6 +36,10 @@
                             <a href="#inicio" class="nav-link">Inicio</a>
                         </li>
 
+                        <li class="item-menu">
+                            <a href="./eixoglobal.html" class="nav-link">Eixo global</a>
+                        </li>
+
                         <li class="item-menu" id="item-menu-cursos">
                             <a href="#secao-cursos" class="nav-link">Cursos</a>
                             <ul class="aba-cursos">
@@ -63,6 +67,8 @@
                 <nav class="mobile-menu">
                     <ul class="menu">
                         <li class="item-menu"><a href="#inicio" class="nav-link" onClick="menuShow()">Inicio</a></li>
+                        <li class="item-menu"><a href="./" class="nav-link" onClick="menuShow()">Eixo Global</a></li>
+                        </a></li>
                         <li class="item-menu"><a href="#secao-cursos" class="nav-link" onClick="menuShow()">Cursos</a></li>
                         <li class="item-menu"><a href="#secao-endereco" class="nav-link" onClick="menuShow()">Visite-nos</a></li>
                         <li class="item-menu"><a href="#footer_contacts" onClick="menuShow()" class="nav-link">Contato</a></li>
@@ -193,18 +199,41 @@
                         <div class="logo-sobre"></div>
                     </div>
                     <div class="col-12 col-md-6 informacoes-text">
-                        <div class="box-paragrafo">
+                        <div class="box-paragrafo" style="height: 100%;">
                             <p>O Colégio Diocesano Conceito é uma instituição de ensino dedicada a proporcionar uma educação de qualidade, enraizada em valores sólidos e excelência acadêmica. Com uma longa tradição de ensino, nosso compromisso é preparar os alunos para o sucesso na vida, promovendo o crescimento pessoal, social e intelectual</p>
                         </div>
                     </div>
                 </div>
+
+                <div data-aos="fade-up" class="container informacoes d-flex">
+                    <div class="col-12 col-md-6 informacoes-text order-2 order-md-1">
+                        <div class="box-paragrafo">
+                            <p class="pg-eixo">O projeto visa preencher lacunas sociais devido a mudanças econômicas, empoderamento feminino e transformações na educação infantil. O Colégio Diocesano Conceito adotou o Eixo Global de Ensino, incluindo áreas como Empreendedorismo, Ética, Sociedade, Meio Ambiente, Nutrição entre outras. Essa abordagem inovadora prepara crianças desde cedo para a crescente carga de informações, promovendo uma formação completa e diversificada.</p>
+                        </div>
+                        <div class="btn-eixoglobal d-flex justify-content-center">
+                            <button class="btn">
+                                <svg viewBox="0 0 180 60" class="border">
+                                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                </svg>
+                                <span>Saiba Mais</span>
+                              </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 informacoes-icone d-flex order-md-2">
+                        <div class="logo-eixoglobal">
+                            <img src="src/images/secao-sobre/diocesano-eixoglobal.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
             <section class="container-fluid" id="secao-cursos" data-aos="fade-up">
                 <div class="container">
                     <h2 class="titulo-secao">Trilha de Ensino</h2>
-                    <div class="row justify-content-center cursos">
-                        <div class="curso-card col-11 col-lg-3 mb-2 mb-lg-4">
+                    <div class="row justify-content-between cursos">
+                        <div class="curso-card col-12 col-lg-3 mb-5 mb-lg-4 ">
                             <div class="curso-imagem">
                                 <img src="src/images/secao-cursos/infatil-card.jpg" alt="Imagem Educação infantil">
                             </div>
@@ -214,7 +243,7 @@
                             </div>
                         </div>
 
-                        <div class="curso-card col-11 col-lg-3 mb-2 mb-lg-4">
+                        <div class="curso-card col-12 col-lg-3 mb-5 mb-lg-4">
                             <div class="curso-imagem">
                                 <img src="src/images/secao-cursos/fundamental-card.jpg" alt="Imagem Ensino fundamental">
                             </div>
@@ -223,7 +252,7 @@
                                 <a href="./fundamental.html"><button class="botao-saiba-mais">Saiba Mais</button></a>
                             </div>
                         </div>
-                        <div class="curso-card col-11 col-lg-3 mb-2 mb-lg-4">
+                        <div class="curso-card col-12 col-lg-3 mb-5 mb-lg-4">
                             <div class="curso-imagem">
                                 <img src="src/images/secao-cursos/medio-card.jpg" alt="Imagem Ensino médio" id="card-ensino-medio">
                             </div>
@@ -233,8 +262,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center cursos mt-5">
-                        <div class="curso-card col-11 col-lg-10 mt-4 mb-5 mb-lg-5 mt-lg-4">
+                    <div class="row justify-content-center cursos">
+                        <div class="curso-card extracurricular col-11 col-lg-10 mt-4 mb-5 mb-lg-5 mt-lg-4">
                             <div class="curso-imagem" id="extracurricular-image">
                                 <img src="src/images/secao-cursos/extracurricular-card.JPG" alt="Imagem Atividades extracurriculares">
                             </div>
@@ -287,10 +316,7 @@
                         <a href="#inicio" class="footer-link">Inicio</a>
                     </li>
                     <li>
-                        <a href="#secao-cards" class="footer-link">Missão</a>
-                    </li>
-                    <li>
-                        <a href="#secao-informacoes" class="footer-link">Sobre</a>
+                        <a href="" class="footer-link">Eixo global</a>
                     </li>
                     <li>
                         <a href="#secao-cursos" class="footer-link">Cursos</a>
@@ -352,3 +378,8 @@
         <script> AOS.init({duration: 700}); </script>
     </body>
 </html>
+
+
+<!-- PAGINA EIXO GLOBAL -->
+<!-- ATUALIZAÇÂO DOS MENUS HEADER E FOOTER -->
+<!-- FUNCIONALIDADE ATIVAÇÃO DO NAV LINK -->

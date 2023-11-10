@@ -32,7 +32,13 @@ html{
     opacity: 0;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
+
+    .pg-eixo {
+        font-size: 1.7rem !important;
+        width: 90% !important;
+    }
+
     .maps-endereco .localizacao .localizacao-content .titulo-maps{
         font-size: 5rem;
         margin-bottom: 20px;
@@ -57,6 +63,9 @@ html{
     .texto-verde {
         font-size:2rem !important ;   }
 
+    .informacoes-text .box-paragrafo p{
+        font-size: 2rem ;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -115,6 +124,11 @@ html{
     .informacoes-text .box-paragrafo p{
         font-size: 1.8rem; 
      }
+
+     .pg-eixo {
+        font-size: 1.5rem !important;
+        width: 90% !important;
+    }
 
     .maps-endereco .localizacao .localizacao-content{
         widows: 80%;
@@ -218,13 +232,21 @@ html{
         transform: scale(1.20);
     }
 
-    .informacoes-icone {
+    /* .informacoes-icone:first-of-type {
         border-radius: 10px 10px 0px 0px ;
-     }
-
-    .informacoes-text {
+    }
+    .informacoes-icone:last-of-type {
         border-radius: 0px 0px 10px 10px ;
-     }
+    }
+    .informacoes-text:first-of-type {
+        border-radius:  10px 10px 0px 0px ;
+    }
+    .informacoes-text:last-of-type {
+        border-radius: 0px 0px 10px 10px  ;
+    } */
+     
+    .informacoes-icone{ border-radius: 12px;}
+    .informacoes-text{ border-radius: 12px;}
 
     .informacoes-icone .logo-sobre{
         width: 310px;
@@ -284,6 +306,22 @@ html{
 
 }
 
+@media (max-width: 768px) {
+    .informacoes:first-of-type {
+        padding-bottom: 0;
+    
+    }
+
+    .pg-eixo {
+        font-size: 1.8rem !important;
+        width: 90% !important;
+    }
+
+    .curso-card {
+        width: 100%;
+    }
+}
+
 @media (max-width: 700px) {
 
     .header {
@@ -298,6 +336,8 @@ html{
         background-position: center;
     }
     
+
+
     .informacoes-icone .logo-sobre{
         width: 330px;
         height: 210px;
@@ -372,6 +412,8 @@ html{
 
 @media (max-width: 600px) {
 
+
+
     .informacoes-icone .logo-sobre{
         width: 300px;
         height: 191px;
@@ -400,6 +442,24 @@ html{
      .logo img{
         width: 300px;
      }
+
+     .pg-eixo {
+        font-size: 1.6rem !important;
+        width: 90% !important;
+    }
+
+    .informacoes:first-of-type {
+        padding-top: 0;
+    }
+
+    .informacoes-icone:last-of-type {
+        margin: 50px 0
+    }
+
+    .informacoes .logo-eixoglobal img {     
+        height: 290px;
+    }
+
     .maps-endereco .localizacao {
         width: 100%;
         display: flex;
@@ -537,7 +597,7 @@ html{
 
 @media (max-width: 450px) {
 
-
+    
     .informacoes-icone .logo-sobre{
         width: 270px;
         height: 172px;
@@ -557,6 +617,12 @@ html{
         width: 200px;
         height: 100px;
      }
+
+     
+    .pg-eixo {
+        font-size: 1.5rem !important;
+        width: 90% !important;
+    }
 
      
     .informacoes-text .box-paragrafo p{
@@ -598,6 +664,14 @@ html{
 
 }
 
+@media (max-width: 400px) {
+    
+    .pg-eixo {
+        font-size: 1.4rem !important;
+        width: 90% !important;
+    }
+}
+
 @media (max-width: 360px) {
     .informacoes-icone .logo-sobre{
         width: 250px;
@@ -607,6 +681,12 @@ html{
     .informacoes-text .box-paragrafo p{
         font-size: 1.4rem; 
      }
+
+     
+    .pg-eixo {
+        font-size: 1.3rem !important;
+        width: 90% !important;
+    }
        
      #footer_content {
         gap: 20px;
