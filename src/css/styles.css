@@ -533,8 +533,8 @@ div.carousel-inner {
     width: 180px;
     height: 60px;
     cursor: pointer;
-    background: var(--laranja-intermediario);
-    border-radius: 10px;
+    background: var(--laranja-escuro);
+    border-radius: 2px;
     outline: none;
     border: 1px solid #fff;
     transition: 1s ease-in-out;
@@ -550,14 +550,14 @@ div.carousel-inner {
     stroke-dasharray: 150 480;
     stroke-dashoffset: 150;
     transition: 1s ease-in-out;
-    border-radius: 10px;
+    border-radius: 2px;
     width: 180px;
     height: 60px;
 }
 
 .informacoes .btn-eixoglobal .btn:hover {
     transition: 1s ease-in-out;
-    background: var(--laranja-escuro) ;
+    background: var(--laranja-intermediario) ;
 }
 
 .informacoes .btn-eixoglobal .btn:hover svg {
