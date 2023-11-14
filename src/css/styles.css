@@ -40,6 +40,10 @@ header .logo .img-logo {
     margin: 0 0 0 20px;
 }
 
+header .nav-link.actived {
+    color: var(--laranja-intermediario);
+}
+
 nav .desktop-menu {
     display: flex;
     justify-content: flex-end;

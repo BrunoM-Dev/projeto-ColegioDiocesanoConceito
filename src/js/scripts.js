@@ -24,3 +24,5 @@ function menuHidden(){
 }
 
 window.addEventListener('scroll', menuHidden);
+
+const menuLink = document.querySelectorAll[]
