@@ -916,7 +916,12 @@ main .secao-inicial {
     width: 100vw !important;
 }
 
+
+
 main .secao-conteudo.container {
+    background-image: url(../images/secao-sobre/diocesano-eixoglobal.png);
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
     padding-top: 60px !important;
 }
 
