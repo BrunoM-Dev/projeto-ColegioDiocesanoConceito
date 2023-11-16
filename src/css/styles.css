@@ -892,6 +892,11 @@ main .secao-inicial {
     background-attachment: fixed;
 }
 
+#eixo {
+    background-image: url("../images/artigos-cursos/eixo2.jpg");
+    background-position: 50% 0% !important; 
+}
+
 #infantil {
     background-image: url("../images/artigos-cursos/infantil-guia-2.JPG");
 }

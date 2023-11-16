@@ -312,6 +312,11 @@ html{
     
     }
 
+    #eixo {
+        background-image: url("../images/artigos-cursos/eixo2.jpg");
+        background-position: 30% 0% !important; 
+    }
+
     .pg-eixo {
         font-size: 1.8rem !important;
         width: 90% !important;
@@ -412,7 +417,10 @@ html{
 
 @media (max-width: 600px) {
 
-
+    #eixo {
+        background-image: url("../images/artigos-cursos/eixo2.jpg");
+        background-position: 50% 0% !important; 
+    }
 
     .informacoes-icone .logo-sobre{
         width: 300px;
@@ -560,6 +568,7 @@ html{
         bottom: 20px;
     }
 
+    
     .informacoes-icone .logo-sobre{
         width: 280px;
         height: 178px; 
