@@ -313,8 +313,8 @@ html{
     }
 
     #eixo {
-        background-image: url("../images/artigos-cursos/eixo2.jpg");
-        background-position: 30% 0% !important; 
+        background-image: url("../images/artigos-cursos/eixo.jpg");
+        background-position: 50% !important;
     }
 
     .pg-eixo {
@@ -418,8 +418,8 @@ html{
 @media (max-width: 600px) {
 
     #eixo {
-        background-image: url("../images/artigos-cursos/eixo2.jpg");
-        background-position: 50% 0% !important; 
+        background-image: url("../images/artigos-cursos/eixo-mobile.jpg");
+        background-position: 50% 0% !important;
     }
 
     .informacoes-icone .logo-sobre{
@@ -574,6 +574,11 @@ html{
         height: 178px; 
     }
 
+    #eixo {
+        background-image: url("../images/artigos-cursos/eixo-mobile.jpg");
+        background-position: 50% -175% !important; 
+    }
+    
     .informacoes-text .box-paragrafo p{
         font-size: 2rem; 
      }
