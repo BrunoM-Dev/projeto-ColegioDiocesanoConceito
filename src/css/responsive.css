@@ -314,7 +314,7 @@ html{
 
     #eixo {
         background-image: url("../images/artigos-cursos/eixo.jpg");
-        background-position: 50% !important;
+        background-position: 50% 0% !important;
     }
 
     .pg-eixo {
@@ -576,7 +576,7 @@ html{
 
     #eixo {
         background-image: url("../images/artigos-cursos/eixo-mobile.jpg");
-        background-position: 50% -175% !important; 
+        background-position: 50% 0% !important; 
     }
     
     .informacoes-text .box-paragrafo p{
