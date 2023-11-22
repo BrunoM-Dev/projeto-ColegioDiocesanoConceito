@@ -1000,3 +1000,13 @@ main .secao-conteudo .article ul li {
     font-family: 'Gilroy-light', sans-serif;
     margin-bottom: 10px;
 }
+
+/* main .secao-conteudo .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+main .secao-conteudo .gallery img {
+    width: 100%;
+} */

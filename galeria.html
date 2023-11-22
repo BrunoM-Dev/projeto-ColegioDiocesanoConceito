@@ -30,13 +30,15 @@
             </a>
 
             <nav class="nav-bar col-8">
-                <ul class="desktop-menu">
+                <ul class="desktop-menu" id="menu">
                     <li class="item-menu">
                         <a href="./index.html" class="nav-link">Inicio</a>
                     </li>
+
                     <li class="item-menu">
                         <a href="./eixoglobal.html" class="nav-link">Eixo global</a>
                     </li>
+
                     <li class="item-menu" id="item-menu-cursos">
                         <a href="./index.html#secao-cursos" class="nav-link">Cursos</a>
                         <ul class="aba-cursos">
@@ -48,11 +50,7 @@
                     </li>
 
                     <li class="item-menu">
-                        <a href="galeria.html" class="nav-link">Galeria</a>
-                    </li>
-
-                    <li class="item-menu">
-                        <a href="#footer_contacts" class="nav-link">Contato</a>
+                        <a href="#footer_contacts" class="nav-link" >Contato</a>
                     </li>
                 </ul>
 
@@ -65,8 +63,7 @@
                 <ul class="menu">
                     <li class="item-menu"><a href="./index.html" class="nav-link" onClick="menuShow()">Inicio</a></li>
                     <li class="item-menu"><a href="./eixoglobal.html" class="nav-link" onClick="menuShow()">Eixo global</a></li>
-                    <li class="item-menu"><a href="index.html#secao-cursos" class="nav-link" onClick="menuShow()">Cursos</a></li>
-                    <li class="item-menu"><a href="galeria.html" onClick="menuShow()" class="nav-link">Galeria</a></li>
+                    <li class="item-menu"><a href="./index.html#secao-cursos" class="nav-link" onClick="menuShow()">Cursos</a></li>
                     <li class="item-menu"><a href="#footer_contacts" onClick="menuShow()" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
@@ -81,68 +78,30 @@
             <a href="https://api.whatsapp.com/send?phone=5588997137570&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21+%F0%9F%98%8A" target="_blank"><i class="bi bi-whatsapp"></i></a>
         </button>
 
-        <section class="secao-inicial container-fluid" id="fundamental">
+        <section class="secao-inicial container-fluid" id="galeria">
             <div class="overlay"></div>
             <div class="d-flex justify-content-center">
                 <div class="titulo-cursos">
-                    <h1>Ensino Fundamental</h1>
+                    <h1>Galeria</h1>
                 </div>
             </div>
         </section>
 
-        <section class="secao-conteudo container">
-            <div class="article">
-                <h2 class="subtitulo-article">Objetivo Geral do Fundamental I</h2>
-                <p class="text-article">
-                    Formular sistematicamente um conjunto de decisões, que expressa os propósitos do Ensino Fundamental nos anos iniciais, de forma a condicionar meios de alcançá-los, que ordene os recursos materiais e humanos, que determine métodos, técnicas e formas de organização do ensino, que selecione os programas de ensino baseado na interdisciplinaridade e contextualização do mundo em que o aluno está inserido e que faça valer a política educacional vigente dentro da lei de Diretrizes e Bases da Educação Nacional.
-                </p>
-            </div>
+        <section class="secao-conteudo container d-flex justify-content-center align-items-center">
 
-            <div class="article" data-aos="fade-up">
-                <h2 class="subtitulo-article">Objetivos Específicos do Fundamental I</h2>
-                <ul>
-                    <li>Fortalecer as experiências vivenciadas na Educação Infantil;</li>
 
-                    <li>Garantir um processo de desenvolvimento que repercute em suas relações consigo mesmos, com os outros e com o mundo;</li>
-
-                    <li>Maior autonomia nos movimentos e deslocamentos para que sejam ampliadas suas interações com o espaço; </li>
-
-                    <li>Desenvolver relações com múltiplas linguagens, inclusive os usos sociais da escrita e da matemática;</li>
-
-                    <li>Permitir a participação no mundo letrado e a construção de novas aprendizagens, na escola e para além dela; </li>
-
-                    <li>Desenvolver na oralidade e nos processos de percepção, compreensão e representação, elementos importantes para a apropriação do sistema de escrita alfabética e de outros sistemas de representação;</li>
-
-                    <li>Focar no processo de alfabetização, até o 3° ano, a fim de garantir amplas oportunidades para que os alunos se apropriem do sistema de escrita alfabética de modo articulado ao desenvolvimento de outras habilidades de leitura e de escrita e ao seu envolvimento em práticas diversificadas de letramentos; </li>
-
-                    <li>Ampliar a autonomia intelectual, a compreensão de normas e os interesses pela vida social, e possibilitar aos alunos lidar com sistemas mais amplos, que dizem respeito às relações dos sujeitos entre si, com a natureza, com a história, com a cultura, com as tecnologias e com o ambiente;</li>
-                </ul>
-            </div>
-
-            <div class="article">
-                <h2 class="subtitulo-article">Objetivo Geral do Fundamental II</h2>
-                <p class="text-article">
-                    A proposta do Colégio Diocesano é engajar a inteligência do estudante do Ensino Fundamental – Anos Finais em operações e leituras de mundo marcadas por raciocínios mais complexos, capazes de abordar a realidade com rigor conceitual, mas também com criatividade, criticidade, capacidade propositiva e posicionamento pessoal cada vez mais fundamentado e mediado pela razão em favor da transformação por um mundo mais justo e solidário.
-                </p>
-                <p class="text-article">
-                    O objeto deste colégio é acompanhar a formação afetiva e espiritual, do enriquecimento da imaginação, por meio das artes e da literatura, da educação física e corporal, em compromisso com o desenvolvimento integral dos adolescentes.
-                </p>
-            </div>
-
-            <div class="article">
-                <h2 class="subtitulo-article">Objetivos Específicos do Fundamental II</h2>
-                <ul>
-                    <li>Desenvolver uma ação pedagógica que possibilite ao aluno entrar em contato com suas ideias e hipóteses acerca dos fenômenos estudados para que estabeleça relações entre os saberes que já possuía e os novos conhecimentos que virá a construir, e criar assim, uma rede de significados consistente;</li>
-
-                    <li>Acreditar em um processo de trabalho que enfatiza a curiosidade, o questionamento e a reflexão;</li>
-
-                    <li>Desenvolver a capacidade de produzir conhecimentos a partir de aproximações mais intensas com as informações específicas, das diferentes áreas de ensino;</li>
-
-                    <li>Desenvolver a autonomia em relação à produção e aquisição de conhecimento a partir do exercício sistemático da meta-cognição, levando-o a APRENDER A APRENDER.</li>
-
-                </ul>
-            </div>
-        </section>
+            <!-- <div class="gallery">
+                <img src="./src/images/galeria/" alt="">
+                <img src="./src/images/galeria/" alt="">
+                <img src="./src/images/galeria/" alt="">
+                <img src="./src/images/galeria/" alt="">
+                <img src="./src/images/galeria/" alt="">
+                <img src="./src/images/galeria/" alt="">
+                <img src="./src/images/galeria/" alt="">
+                <img src="./src/images/galeria/" alt="">
+                <img src="./src/images/galeria/" alt="">
+            </div> -->
+        </section>  
 
     </main>
 
@@ -151,7 +110,7 @@
         <div id="footer_content">
             <div id="footer-logo">
                 <img src="src/images/menu-mobile/logo-branca-mobile.png" alt="">
-                <a href="#fundamental"><button class="btn"><i class="bi bi-arrow-up-circle-fill btn-voltar"></i></button></a>
+                <a href="#eixo"><button class="btn"><i class="bi bi-arrow-up-circle-fill btn-voltar"></i></button></a>
             </div>
 
             <ul class="footer-list">
@@ -166,9 +125,6 @@
                 </li>
                 <li>
                     <a href="./index.html#secao-cursos" class="footer-link">Cursos</a>
-                </li>
-                <li>
-                    <a href="galeria.html" class="footer-link">Galeria</a>
                 </li>
             </ul>
 
