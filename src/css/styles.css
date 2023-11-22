@@ -1010,3 +1010,8 @@ main .secao-conteudo .article ul li {
 main .secao-conteudo .gallery img {
     width: 100%;
 } */
+
+main #conteudo-galeria {
+    min-height: calc(90vh - 97px);
+    padding-top: 0 !important; margin-top: 0 !important;
+}
