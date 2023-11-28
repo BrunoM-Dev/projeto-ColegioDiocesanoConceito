@@ -15,6 +15,7 @@
         <script src="src/aos-master/dist/aos.js"></script>
     
         <!-- CSS -->
+        <link rel="stylesheet" href="src/css/lightbox.css">
         <link rel="stylesheet" href="src/css/reset.css">
         <link rel="stylesheet" href="src/css/styles.css">
         <link rel="stylesheet" href="src/css/responsive.css">
@@ -79,7 +80,9 @@
         </button>
         
         <section class="secao-galeria container d-flex justify-content-center flex-column">
-            <div class="slider">
+
+            <!-- <div class="slider">
+
                 <div class="slides">
                     <input type="radio" name="radio-btn" id="radio1">
                     <input type="radio" name="radio-btn" id="radio2">
@@ -87,7 +90,7 @@
                     <input type="radio" name="radio-btn" id="radio4">
 
                     <div class="slide first">
-                        <img src="https://www.macrofotografia.com.br/imagens/pixelsvsdpi_1200x900pixels.jpg" alt="">
+                        <img src="src/images/galeria/kidsnight.JPG" alt="">
                     </div>
                     <div class="slide">
                         <img src="https://img.freepik.com/fotos-gratis/uma-pintura-de-um-lago-de-montanha-com-uma-montanha-ao-fundo_188544-9126.jpg" alt="">
@@ -125,7 +128,74 @@
                 <label for="radio4" class="manual-btn">
                     <img src="https://cdn.pixabay.com/photo/2017/06/29/19/58/said-2455984_1280.jpg" alt="" class="miniatura">
                 </label>
+            </div> -->
+        
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="max-height: 500px;">
+                <div class="carousel-inner" style="max-height: 500px;">
+                    <div class="carousel-item active imagem-carrousel"  id="foto1">
+                    </div>
+                    <div class="carousel-item" id="foto2">
+                    </div>
+                    <div class="carousel-item" id="foto3">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previos</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>   
             </div>
+
+            <div class="box-galeria">
+                <div class="galeria">
+                    <a href="src/images/galeria/diamae.jpg" data-lightbox="models" data-title="Caption1">
+                        <img src="src/images/galeria/diamae.jpg" alt="" class="miniatura" >
+                    </a>
+
+                    <a href="src/images/galeria/diapai.JPG" data-lightbox="models" data-title="Caption2">
+                        <img src="src/images/galeria/diapai.JPG" alt="" class="miniatura">
+                    </a>
+
+                    <a href="src/images/galeria/jogos.jpg" data-lightbox="models" data-title="Caption3">
+                        <img src="src/images/galeria/jogos.jpg" alt="" class="miniatura">
+                    </a>
+
+                    <a href="src/images/galeria/jogoscorrida.jpg" data-lightbox="models" data-title="Caption4">
+                        <img src="src/images/galeria/jogoscorrida.jpg" alt="" class="miniatura">
+                    </a>
+
+                    <a href="src/images/galeria/jogosinfantil.jpg" data-lightbox="models" data-title="Caption5">
+                        <img src="src/images/galeria/jogosinfantil.jpg" alt="" class="miniatura">
+                    </a>
+
+                    <a href="src/images/galeria/jogosinfantil2.jpg" data-lightbox="models" data-title="Caption6">
+                        <img src="src/images/galeria/jogosinfantil2.jpg" alt="" class="miniatura">
+                    </a>
+
+                    <a href="src/images/galeria/paixaocristo.jpg" data-lightbox="models" data-title="Caption7">
+                        <img src="src/images/galeria/paixaocristo.jpg" alt="" class="miniatura">
+                    </a>
+                                        
+                    <a href="src/images/galeria/paixaocristo2.jpg" data-lightbox="models" data-title="Caption8">
+                        <img src="src/images/galeria/paixaocristo2.jpg" alt="" class="miniatura">
+                    </a>
+                                        
+                    <a href="src/images/galeria/paixaocristo3.jpg" data-lightbox="models" data-title="Caption9">
+                        <img src="src/images/galeria/paixaocristo3.jpg" alt="" class="miniatura">
+                    </a>
+                                        
+                    <a href="src/images/galeria/saojoao.jpg" data-lightbox="models" data-title="Caption10">
+                        <img src="src/images/galeria/saojoao.jpg" alt="" class="miniatura">
+                    </a>
+
+                </div>
+            </div>
+
         </section>
 
     </main>
@@ -134,7 +204,7 @@
     <footer>
         <div id="footer_content">
             <div id="footer-logo">
-                <img src="src/images/menu-mobile/logo-branca-mobile.png" alt="">
+                <img src="src/images/menu-mobile/logo-branca-mobile.png" alt="" class="miniatura">
                 <a href="#eixo"><button class="btn"><i class="bi bi-arrow-up-circle-fill btn-voltar"></i></button></a>
             </div>
 
@@ -202,9 +272,7 @@
         </div>
     </footer>
 
-    <script>
-
-    </script>
+    <script src="src/js/lightbox-plus-jquery.js"></script>
     <script> AOS.init({duration: 700}); </script>
 </body>
 </html>

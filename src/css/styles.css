@@ -170,11 +170,6 @@ div.carousel-inner {
     box-shadow: 2px 3px 20px black;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-image: url(../images/logo-colorida.png);
-}
-
 .carousel-control-prev-icon {
     display: inline-block;
     opacity: 0.8;
@@ -199,6 +194,10 @@ div.carousel-inner {
 .carousel-control-next-icon:hover {
     opacity: 1;
     transform: scale(2.5);
+}
+
+.secao-galeria .carousel-control-next, .secao-galeria .carousel-control-prev {
+    top: 0;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -1004,79 +1003,116 @@ main .secao-conteudo .article ul li {
 
 main .secao-galeria {
     min-height: calc(100vh - 97px);
-    margin: 97px auto;
-    gap: 10px;
+    margin: 90px auto;
+    gap: 40px;
 
 }
 
-main .secao-galeria .slider{
+
+/* 
+         main .secao-galeria .slider{
+            display: flex;
+            justify-content: center;
+            width: 900px;    
+            overflow: hidden;   
+        } 
+        .slider .slides {
+            width: 100%;    
+            height: 450px;
+            display: flex;
+            border-radius: 15px;
+        }
+        .slider .slides input {
+            display: none;
+        }
+        .slides .slide {
+            display: flex;
+            border-radius: 15px;
+        }
+        .slides .slide img {
+            width: 1200px;
+            border-radius: 15px;
+        }
+        .navigation-manual {
+            width: 1200px;     
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+        .manual-btn {
+            border-radius: 10px;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            cursor: pointer; 
+        }   
+        .manuel-btn .miniatura{
+            width: 100px;
+            height: 100px;
+        
+        }
+        #radio1:checked ~ .first {
+            margin-left: 0%;
+            transition: all 1s;
+        }
+        #radio2:checked ~ .first {
+            margin-left: -100%;
+            transition: all 1s;
+        }
+        #radio3:checked ~ .first {
+            margin-left: -200%;
+            transition: all 1s;
+        }
+        #radio4:checked ~ .first {
+            margin-left: -300%;
+            transition: all 1s;
+        } 
+*/
+
+.secao-galeria div.carousel-inner {
+    margin: 0;
+}
+
+.secao-galeria .carousel-item {
+    background-position: center center;
+    background-size: cover; 
+    background-repeat: no-repeat;   
+    height: 500px;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+#foto1{
+    background-image: url("../images/galeria/diamae.jpg");
+}
+#foto2 {
+    background-image: url("../images/galeria/diapai.JPG");
+}
+#foto3 {
+    background-image: url("../images/galeria/jogos.jpg");
+}
+
+.box-galeria {
+    width: 100%;
     display: flex;
+    align-items: center;   
     justify-content: center;
-    width: 1140px;    
-    overflow: hidden;
-    height: 450px;
 }
 
-.slider .slides {
-    width: 100%;    
-    height: 450px;
-    display: flex;
-    border-radius: 5px;
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    overflow-x: hidden;   
 }
 
-.slider .slides input {
-    display: none;
-}
-
-.slides .slide {
-    display: flex;
-    border-radius: 5px;
-}
-
-.slides .slide img {
-    width: 1140px;
-    border-radius: 5px;
-}
-
-.navigation-manual {
-    width: 1140px;     
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-}
-
-.manual-btn {
+.galeria .miniatura{
+    width: 100%;
     border-radius: 10px;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    cursor: pointer; 
-}   
-
-.manuel-btn .miniatura{
-    width: 100px;
-    height: 100px;
-  
+    transition: 0.2s;
 }
 
-
-#radio1:checked ~ .first {
-    margin-left: 0%;
-    transition: all 1s;
-}
-
-#radio2:checked ~ .first {
-    margin-left: -100%;
-    transition: all 1s;
-}
-
-#radio3:checked ~ .first {
-    margin-left: -200%;
-    transition: all 1s;
-}
-
-#radio4:checked ~ .first {
-    margin-left: -300%;
-    transition: all 1s;
+.galeria .miniatura:hover {
+    box-shadow: 0px 0px 30px var(--verde-intermediario);
 }
