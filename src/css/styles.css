@@ -1008,68 +1008,6 @@ main .secao-galeria {
 
 }
 
-
-/* 
-         main .secao-galeria .slider{
-            display: flex;
-            justify-content: center;
-            width: 900px;    
-            overflow: hidden;   
-        } 
-        .slider .slides {
-            width: 100%;    
-            height: 450px;
-            display: flex;
-            border-radius: 15px;
-        }
-        .slider .slides input {
-            display: none;
-        }
-        .slides .slide {
-            display: flex;
-            border-radius: 15px;
-        }
-        .slides .slide img {
-            width: 1200px;
-            border-radius: 15px;
-        }
-        .navigation-manual {
-            width: 1200px;     
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 20px;
-        }
-        .manual-btn {
-            border-radius: 10px;
-            width: 100px;
-            height: 100px;
-            overflow: hidden;
-            cursor: pointer; 
-        }   
-        .manuel-btn .miniatura{
-            width: 100px;
-            height: 100px;
-        
-        }
-        #radio1:checked ~ .first {
-            margin-left: 0%;
-            transition: all 1s;
-        }
-        #radio2:checked ~ .first {
-            margin-left: -100%;
-            transition: all 1s;
-        }
-        #radio3:checked ~ .first {
-            margin-left: -200%;
-            transition: all 1s;
-        }
-        #radio4:checked ~ .first {
-            margin-left: -300%;
-            transition: all 1s;
-        } 
-*/
-
 .secao-galeria div.carousel-inner {
     margin: 0;
 }
@@ -1083,15 +1021,48 @@ main .secao-galeria {
     object-position: 50%;
 }
 
-#foto1{
-    background-image: url("../images/galeria/diamae.jpg");
-}
-#foto2 {
-    background-image: url("../images/galeria/diapai.JPG");
-}
-#foto3 {
-    background-image: url("../images/galeria/jogos.jpg");
-}
+#fotogaleria1  {background-image: url(../images/galeria/mae/diamae.jpg);}
+#fotogaleria2  {background-image: url(../images/galeria/mae/mae4.jpg);}
+
+#fotogaleria3  {background-image: url(../images/galeria/pai/diapai.JPG);}
+#fotogaleria4  {background-image: url(../images/galeria/pai/pai2.JPG);}
+#fotogaleria5  {background-image: url(../images/galeria/pai/pai3.JPG);}
+#fotogaleria6  {background-image: url(../images/galeria/pai/pai4.JPG);}
+#fotogaleria7  {background-image: url(../images/galeria/pai/pai5.JPG);}
+
+#fotogaleria8  {background-image: url(../images/galeria/hallowen/hallowen1.jpg);}
+#fotogaleria9  {background-image: url(../images/galeria/hallowen/hallowen2.jpg);}
+#fotogaleria10 {background-image: url(../images/galeria/hallowen/hallowen3.jpg);}
+#fotogaleria11 {background-image: url(../images/galeria/hallowen/hallowen4.jpg);}
+
+#fotogaleria12 {background-image: url(../images/galeria/kidsnight/kidsnight.JPG);}
+#fotogaleria13 {background-image: url(../images/galeria/kidsnight/kidsnight\ \(1\).JPG);}
+#fotogaleria14 {background-image: url(../images/galeria/kidsnight/kidsnight\ \(2\).JPG);}
+#fotogaleria15 {background-image: url(../images/galeria/kidsnight/kidsnight\ \(3\).JPG);}
+#fotogaleria16 {background-image: url(../images/galeria/kidsnight/kidsnight\ \(4\).JPG);}
+
+#fotogaleria17 {background-image: url(../images/galeria/jogos/jogos\ \(1\).jpg);}
+#fotogaleria18 {background-image: url(../images/galeria/jogos/jogos\ \(2\).jpg);}
+#fotogaleria19 {background-image: url(../images/galeria/jogos/jogos\ \(3\).jpg);}
+#fotogaleria20 {background-image: url(../images/galeria/jogos/jogos\ \(4\).jpg);}
+#fotogaleria21 {background-image: url(../images/galeria/jogos/jogos\ \(5\).jpg);}
+#fotogaleria22 {background-image: url(../images/galeria/jogos/jogos\ \(6\).jpg);}
+#fotogaleria23 {background-image: url(../images/galeria/jogos/jogos\ \(7\).jpg);}
+
+#fotogaleria24 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(1\).jpg);}
+#fotogaleria25 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(2\).jpg);}
+#fotogaleria26 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(3\).jpg);}
+#fotogaleria27 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(4\).jpg);}
+#fotogaleria28 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(5\).jpg);}
+#fotogaleria29 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(6\).jpg);}
+#fotogaleria30 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(7\).jpg);}
+
+#fotogaleria31 {background-image: url(../images/galeria/saojoao/saojoao\ \(1\).jpg);}
+#fotogaleria32 {background-image: url(../images/galeria/saojoao/saojoao\ \(2\).jpg);}
+#fotogaleria33 {background-image: url(../images/galeria/saojoao/saojoao\ \(3\).jpg);}
+#fotogaleria34 {background-image: url(../images/galeria/saojoao/saojoao\ \(4\).jpg);}
+#fotogaleria35 {background-image: url(../images/galeria/saojoao/saojoao\ \(5\).jpg);}
+
 
 .box-galeria {
     width: 100%;
@@ -1104,7 +1075,8 @@ main .secao-galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
-    overflow-x: hidden;   
+    overflow-x: hidden; 
+    overflow-y: hidden;  
 }
 
 .galeria .miniatura{
