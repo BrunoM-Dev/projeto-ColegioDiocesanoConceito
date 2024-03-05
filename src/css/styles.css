@@ -110,6 +110,8 @@ nav .desktop-menu #item-menu-cursos .aba-cursos li:hover a {
     color: var(--laranja-intermediario);
 }
 
+#current-page {color: var(--laranja-intermediario);}
+
 nav .desktop-menu .item-menu:hover {
     color: var(--laranja-intermediario);
 }
