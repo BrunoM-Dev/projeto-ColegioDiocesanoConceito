@@ -7,12 +7,12 @@
         <link rel="shortcut icon" href="src/images/favicon.png" type="image/png">
     
         <!-- EXTERNOS -->
-        <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
-        <link href="src/aos-master/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="src/bootstrap-icons/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="src/fontawesome-free-6.4.2-web/css/all.min.css">
-        <script src="src/bootstrap/js/bootstrap.min.js"></script>
-        <script src="src/aos-master/dist/aos.js"></script>
+        <link rel="stylesheet" href="src/libs/bootstrap/css/bootstrap.min.css">
+        <link href="src/libs/aos-master/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="src/libs/bootstrap-icons/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="src/libs/fontawesome-free-6.4.2-web/css/all.min.css">
+        <script src="src/libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="src/libs/aos-master/dist/aos.js"></script>
     
         <!-- CSS -->
         <link rel="stylesheet" href="src/css/reset.css">
@@ -22,205 +22,205 @@
         <!-- JAVASCRIPT-->
         <script src="src/js/scripts.js" defer></script>
     </head>
-<body>
-    <header class="container-fluid header">
-        <div class="row justify-content-space-between align-items-center">
-            <a href="./index.html" class="logo col-3">
-                <h1 class="img-logo"></h1>
-            </a>
+    <body>
+        <header class="container-fluid header">
+            <div class="row justify-content-space-between align-items-center">
+                <a href="./index.html" class="logo col-3">
+                    <h1 class="img-logo"></h1>
+                </a>
 
-            <nav class="nav-bar col-8">
-                <ul class="desktop-menu">
-                    <li class="item-menu">
-                        <a href="./index.html" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="item-menu">
-                        <a href="./eixoglobal.html" class="nav-link">Eixo global</a>
-                    </li>
-                    <li class="item-menu" id="item-menu-cursos">
-                        <a href="./index.html#secao-cursos" class="nav-link">Cursos</a>
-                        <ul class="aba-cursos">
-                            <li><a href="./infantil.html">Educação Infantil</a></li>
-                            <li><a href="./fundamental.html">Ensino Fundamental</a></li>
-                            <li><a href="./medio.html">Ensino Médio</a></li>
-                            <li><a href="./extracurriculares.html">Atividades Extracurriculares</a></li>
-                        </ul>
-                    </li>
+                <nav class="nav-bar col-8">
+                    <ul class="desktop-menu">
+                        <li class="item-menu">
+                            <a href="./index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="./eixoglobal.html" class="nav-link">Eixo global</a>
+                        </li>
+                        <li class="item-menu" id="item-menu-cursos">
+                            <a href="./index.html#secao-cursos" class="nav-link">Cursos</a>
+                            <ul class="aba-cursos">
+                                <li><a href="./infantil.html">Educação Infantil</a></li>
+                                <li><a href="./fundamental.html">Ensino Fundamental</a></li>
+                                <li><a href="./medio.html">Ensino Médio</a></li>
+                                <li><a href="./extracurriculares.html">Atividades Extracurriculares</a></li>
+                            </ul>
+                        </li>
 
-                    <li class="item-menu">
-                        <a href="galeria.html" class="nav-link">Galeria</a>
-                    </li>
+                        <li class="item-menu">
+                            <a href="galeria.html" class="nav-link">Galeria</a>
+                        </li>
 
-                    <li class="item-menu">
-                        <a href="#footer_contacts" class="nav-link">Contato</a>
+                        <li class="item-menu">
+                            <a href="#footer_contacts" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+
+                    <div class="mobile-menu-icon">
+                        <button onClick="menuShow()"><img src="src/images/menu-mobile/button_mobile.svg" alt="" class="icone-menu-mobile"></button>
+                    </div>
+                </nav>
+
+                <nav class="mobile-menu">
+                    <ul class="menu">
+                        <li class="item-menu"><a href="./index.html" class="nav-link" onClick="menuShow()">Inicio</a></li>
+                        <li class="item-menu"><a href="./eixoglobal.html" class="nav-link" onClick="menuShow()">Eixo global</a></li>
+                        <li class="item-menu"><a href="index.html#secao-cursos" class="nav-link" onClick="menuShow()">Cursos</a></li>
+                        <li class="item-menu"><a href="galeria.html" onClick="menuShow()" class="nav-link">Galeria</a></li>
+                        <li class="item-menu"><a href="#footer_contacts" onClick="menuShow()" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <button class="btn-flutuante" id="btn-flutuante-maps">
+                <a href="https://www.google.com/maps/place/Diocesan+College+of+Crato/@-7.235144,-39.410814,15z/data=!4m6!3m5!1s0x7a18484451aea13:0xb28923c9ecc5939d!8m2!3d-7.2351437!4d-39.4108141!16s%2Fg%2F1tfq4v_7?hl=pt-BR&entry=ttu" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+            </button>
+            <button class="btn-flutuante" id="btn-flutuante-wpp">
+                <a href="https://api.whatsapp.com/send?phone=5588997137570&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21+%F0%9F%98%8A" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            </button>
+
+            <section class="secao-inicial container-fluid" id="fundamental">
+                <div class="overlay"></div>
+                <div class="d-flex justify-content-center">
+                    <div class="titulo-cursos">
+                        <h1>Ensino Fundamental</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="secao-conteudo container">
+                <div class="article">
+                    <h2 class="subtitulo-article">Objetivo Geral do Fundamental I</h2>
+                    <p class="text-article">
+                        Formular sistematicamente um conjunto de decisões, que expressa os propósitos do Ensino Fundamental nos anos iniciais, de forma a condicionar meios de alcançá-los, que ordene os recursos materiais e humanos, que determine métodos, técnicas e formas de organização do ensino, que selecione os programas de ensino baseado na interdisciplinaridade e contextualização do mundo em que o aluno está inserido e que faça valer a política educacional vigente dentro da lei de Diretrizes e Bases da Educação Nacional.
+                    </p>
+                </div>
+
+                <div class="article" data-aos="fade-up">
+                    <h2 class="subtitulo-article">Objetivos Específicos do Fundamental I</h2>
+                    <ul>
+                        <li>Fortalecer as experiências vivenciadas na Educação Infantil;</li>
+
+                        <li>Garantir um processo de desenvolvimento que repercute em suas relações consigo mesmos, com os outros e com o mundo;</li>
+
+                        <li>Maior autonomia nos movimentos e deslocamentos para que sejam ampliadas suas interações com o espaço; </li>
+
+                        <li>Desenvolver relações com múltiplas linguagens, inclusive os usos sociais da escrita e da matemática;</li>
+
+                        <li>Permitir a participação no mundo letrado e a construção de novas aprendizagens, na escola e para além dela; </li>
+
+                        <li>Desenvolver na oralidade e nos processos de percepção, compreensão e representação, elementos importantes para a apropriação do sistema de escrita alfabética e de outros sistemas de representação;</li>
+
+                        <li>Focar no processo de alfabetização, até o 3° ano, a fim de garantir amplas oportunidades para que os alunos se apropriem do sistema de escrita alfabética de modo articulado ao desenvolvimento de outras habilidades de leitura e de escrita e ao seu envolvimento em práticas diversificadas de letramentos; </li>
+
+                        <li>Ampliar a autonomia intelectual, a compreensão de normas e os interesses pela vida social, e possibilitar aos alunos lidar com sistemas mais amplos, que dizem respeito às relações dos sujeitos entre si, com a natureza, com a história, com a cultura, com as tecnologias e com o ambiente;</li>
+                    </ul>
+                </div>
+
+                <div class="article">
+                    <h2 class="subtitulo-article">Objetivo Geral do Fundamental II</h2>
+                    <p class="text-article">
+                        A proposta do Colégio Diocesano é engajar a inteligência do estudante do Ensino Fundamental – Anos Finais em operações e leituras de mundo marcadas por raciocínios mais complexos, capazes de abordar a realidade com rigor conceitual, mas também com criatividade, criticidade, capacidade propositiva e posicionamento pessoal cada vez mais fundamentado e mediado pela razão em favor da transformação por um mundo mais justo e solidário.
+                    </p>
+                    <p class="text-article">
+                        O objeto deste colégio é acompanhar a formação afetiva e espiritual, do enriquecimento da imaginação, por meio das artes e da literatura, da educação física e corporal, em compromisso com o desenvolvimento integral dos adolescentes.
+                    </p>
+                </div>
+
+                <div class="article">
+                    <h2 class="subtitulo-article">Objetivos Específicos do Fundamental II</h2>
+                    <ul>
+                        <li>Desenvolver uma ação pedagógica que possibilite ao aluno entrar em contato com suas ideias e hipóteses acerca dos fenômenos estudados para que estabeleça relações entre os saberes que já possuía e os novos conhecimentos que virá a construir, e criar assim, uma rede de significados consistente;</li>
+
+                        <li>Acreditar em um processo de trabalho que enfatiza a curiosidade, o questionamento e a reflexão;</li>
+
+                        <li>Desenvolver a capacidade de produzir conhecimentos a partir de aproximações mais intensas com as informações específicas, das diferentes áreas de ensino;</li>
+
+                        <li>Desenvolver a autonomia em relação à produção e aquisição de conhecimento a partir do exercício sistemático da meta-cognição, levando-o a APRENDER A APRENDER.</li>
+
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+
+        <footer>
+            <div id="footer_content">
+                <div id="footer-logo">
+                    <img src="src/images/menu-mobile/logo-branca-mobile.png" alt="">
+                    <a href="#fundamental"><button class="btn"><i class="bi bi-arrow-up-circle-fill btn-voltar"></i></button></a>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <h2>Menu</h2>
+                    </li>
+                    <li>
+                        <a href="./index.html" class="footer-link">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./eixoglobal.html" class="footer-link">Eixo global</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#secao-cursos" class="footer-link">Cursos</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html" class="footer-link">Galeria</a>
                     </li>
                 </ul>
 
-                <div class="mobile-menu-icon">
-                    <button onClick="menuShow()"><img src="src/images/menu-mobile/button_mobile.svg" alt="" class="icone-menu-mobile"></button>
-                </div>
-            </nav>
-
-            <nav class="mobile-menu">
-                <ul class="menu">
-                    <li class="item-menu"><a href="./index.html" class="nav-link" onClick="menuShow()">Inicio</a></li>
-                    <li class="item-menu"><a href="./eixoglobal.html" class="nav-link" onClick="menuShow()">Eixo global</a></li>
-                    <li class="item-menu"><a href="index.html#secao-cursos" class="nav-link" onClick="menuShow()">Cursos</a></li>
-                    <li class="item-menu"><a href="galeria.html" onClick="menuShow()" class="nav-link">Galeria</a></li>
-                    <li class="item-menu"><a href="#footer_contacts" onClick="menuShow()" class="nav-link">Contato</a></li>
+                <ul class="footer-list">
+                    <li>
+                        <h2>Contato</h2>
+                    </li>
+                    <li> 
+                        <a href="mailto:direcaogeral@diocesanoconceito.com" target="_blank" class="footer-link"><i class="bi bi-envelope-at-fill icone-email"></i>direcaogeral@diocesanoconceito.com</a>
+                    </li>
+                    <li> 
+                        <a href="mailto:colegiodiocesano.secretaria@gmail.com" target="_blank" class="footer-link"><i class="bi bi-envelope-at-fill icone-email"></i>colegiodiocesano.secretaria@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5588997137570&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21+%F0%9F%98%8A" target="_blank" class="footer-link" ><i class="bi bi-telephone-fill icone-faleconosco"></i> Fale conosco</a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <main>
-        <button class="btn-flutuante" id="btn-flutuante-maps">
-            <a href="https://www.google.com/maps/place/Diocesan+College+of+Crato/@-7.235144,-39.410814,15z/data=!4m6!3m5!1s0x7a18484451aea13:0xb28923c9ecc5939d!8m2!3d-7.2351437!4d-39.4108141!16s%2Fg%2F1tfq4v_7?hl=pt-BR&entry=ttu" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
-        </button>
-        <button class="btn-flutuante" id="btn-flutuante-wpp">
-            <a href="https://api.whatsapp.com/send?phone=5588997137570&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21+%F0%9F%98%8A" target="_blank"><i class="bi bi-whatsapp"></i></a>
-        </button>
 
-        <section class="secao-inicial container-fluid" id="fundamental">
-            <div class="overlay"></div>
-            <div class="d-flex justify-content-center">
-                <div class="titulo-cursos">
-                    <h1>Ensino Fundamental</h1>
+                <div id="footer_contacts">
+                    <div id="footer_social_media">
+                        <a href="https://www.instagram.com/diocesanodocratoconceito/" class="footer-link" target="_blank" id="instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/channel/UCkdwV68PetF2mRnHeDsrVMw" class="footer-link" target="_blank" id="youtube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@colegiodiocesano1" class="footer-link" target="_blank" id="tiktok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/DiocesanoConc_" class="footer-link" target="_blank" id="twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/company/col%C3%A9gio-diocesano-conceito/" class="footer-link" target="_blank" id="linkedin">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <div id="slogan">
+                        <p>A educação humanizada <br> transforma.</p>
+                    </div>
                 </div>
+            </div> 
+            <div id="footer_copyright">
+                &#169
+                2023 Todos os direitos reservados
             </div>
-        </section>
+        </footer>
 
-        <section class="secao-conteudo container">
-            <div class="article">
-                <h2 class="subtitulo-article">Objetivo Geral do Fundamental I</h2>
-                <p class="text-article">
-                    Formular sistematicamente um conjunto de decisões, que expressa os propósitos do Ensino Fundamental nos anos iniciais, de forma a condicionar meios de alcançá-los, que ordene os recursos materiais e humanos, que determine métodos, técnicas e formas de organização do ensino, que selecione os programas de ensino baseado na interdisciplinaridade e contextualização do mundo em que o aluno está inserido e que faça valer a política educacional vigente dentro da lei de Diretrizes e Bases da Educação Nacional.
-                </p>
-            </div>
-
-            <div class="article" data-aos="fade-up">
-                <h2 class="subtitulo-article">Objetivos Específicos do Fundamental I</h2>
-                <ul>
-                    <li>Fortalecer as experiências vivenciadas na Educação Infantil;</li>
-
-                    <li>Garantir um processo de desenvolvimento que repercute em suas relações consigo mesmos, com os outros e com o mundo;</li>
-
-                    <li>Maior autonomia nos movimentos e deslocamentos para que sejam ampliadas suas interações com o espaço; </li>
-
-                    <li>Desenvolver relações com múltiplas linguagens, inclusive os usos sociais da escrita e da matemática;</li>
-
-                    <li>Permitir a participação no mundo letrado e a construção de novas aprendizagens, na escola e para além dela; </li>
-
-                    <li>Desenvolver na oralidade e nos processos de percepção, compreensão e representação, elementos importantes para a apropriação do sistema de escrita alfabética e de outros sistemas de representação;</li>
-
-                    <li>Focar no processo de alfabetização, até o 3° ano, a fim de garantir amplas oportunidades para que os alunos se apropriem do sistema de escrita alfabética de modo articulado ao desenvolvimento de outras habilidades de leitura e de escrita e ao seu envolvimento em práticas diversificadas de letramentos; </li>
-
-                    <li>Ampliar a autonomia intelectual, a compreensão de normas e os interesses pela vida social, e possibilitar aos alunos lidar com sistemas mais amplos, que dizem respeito às relações dos sujeitos entre si, com a natureza, com a história, com a cultura, com as tecnologias e com o ambiente;</li>
-                </ul>
-            </div>
-
-            <div class="article">
-                <h2 class="subtitulo-article">Objetivo Geral do Fundamental II</h2>
-                <p class="text-article">
-                    A proposta do Colégio Diocesano é engajar a inteligência do estudante do Ensino Fundamental – Anos Finais em operações e leituras de mundo marcadas por raciocínios mais complexos, capazes de abordar a realidade com rigor conceitual, mas também com criatividade, criticidade, capacidade propositiva e posicionamento pessoal cada vez mais fundamentado e mediado pela razão em favor da transformação por um mundo mais justo e solidário.
-                </p>
-                <p class="text-article">
-                    O objeto deste colégio é acompanhar a formação afetiva e espiritual, do enriquecimento da imaginação, por meio das artes e da literatura, da educação física e corporal, em compromisso com o desenvolvimento integral dos adolescentes.
-                </p>
-            </div>
-
-            <div class="article">
-                <h2 class="subtitulo-article">Objetivos Específicos do Fundamental II</h2>
-                <ul>
-                    <li>Desenvolver uma ação pedagógica que possibilite ao aluno entrar em contato com suas ideias e hipóteses acerca dos fenômenos estudados para que estabeleça relações entre os saberes que já possuía e os novos conhecimentos que virá a construir, e criar assim, uma rede de significados consistente;</li>
-
-                    <li>Acreditar em um processo de trabalho que enfatiza a curiosidade, o questionamento e a reflexão;</li>
-
-                    <li>Desenvolver a capacidade de produzir conhecimentos a partir de aproximações mais intensas com as informações específicas, das diferentes áreas de ensino;</li>
-
-                    <li>Desenvolver a autonomia em relação à produção e aquisição de conhecimento a partir do exercício sistemático da meta-cognição, levando-o a APRENDER A APRENDER.</li>
-
-                </ul>
-            </div>
-        </section>
-
-    </main>
-
-
-    <footer>
-        <div id="footer_content">
-            <div id="footer-logo">
-                <img src="src/images/menu-mobile/logo-branca-mobile.png" alt="">
-                <a href="#fundamental"><button class="btn"><i class="bi bi-arrow-up-circle-fill btn-voltar"></i></button></a>
-            </div>
-
-            <ul class="footer-list">
-                <li>
-                    <h2>Menu</h2>
-                </li>
-                <li>
-                    <a href="./index.html" class="footer-link">Inicio</a>
-                </li>
-                <li>
-                    <a href="./eixoglobal.html" class="footer-link">Eixo global</a>
-                </li>
-                <li>
-                    <a href="./index.html#secao-cursos" class="footer-link">Cursos</a>
-                </li>
-                <li>
-                    <a href="galeria.html" class="footer-link">Galeria</a>
-                </li>
-            </ul>
-
-            <ul class="footer-list">
-                <li>
-                    <h2>Contato</h2>
-                </li>
-                <li> 
-                    <a href="mailto:direcaogeral@diocesanoconceito.com" target="_blank" class="footer-link"><i class="bi bi-envelope-at-fill icone-email"></i>direcaogeral@diocesanoconceito.com</a>
-                </li>
-                <li> 
-                    <a href="mailto:colegiodiocesano.secretaria@gmail.com" target="_blank" class="footer-link"><i class="bi bi-envelope-at-fill icone-email"></i>colegiodiocesano.secretaria@gmail.com</a>
-                </li>
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=5588997137570&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21+%F0%9F%98%8A" target="_blank" class="footer-link" ><i class="bi bi-telephone-fill icone-faleconosco"></i> Fale conosco</a>
-                </li>
-            </ul>
-
-            <div id="footer_contacts">
-                <div id="footer_social_media">
-                    <a href="https://www.instagram.com/diocesanodocratoconceito/" class="footer-link" target="_blank" id="instagram">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-
-                    <a href="https://www.youtube.com/channel/UCkdwV68PetF2mRnHeDsrVMw" class="footer-link" target="_blank" id="youtube">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-
-                    <a href="https://www.tiktok.com/@colegiodiocesano1" class="footer-link" target="_blank" id="tiktok">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
-                    
-                    <a href="https://twitter.com/DiocesanoConc_" class="footer-link" target="_blank" id="twitter">
-                        <i class="bi bi-twitter"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/company/col%C3%A9gio-diocesano-conceito/" class="footer-link" target="_blank" id="linkedin">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                </div>
-
-                <div id="slogan">
-                    <p>A educação humanizada <br> transforma.</p>
-                </div>
-            </div>
-        </div> 
-        <div id="footer_copyright">
-            &#169
-            2023 Todos os direitos reservados
-        </div>
-    </footer>
-
-    <script> AOS.init({duration: 700}); </script>
-</body>
+        <script> AOS.init({duration: 700}); </script>
+    </body>
 </html>
