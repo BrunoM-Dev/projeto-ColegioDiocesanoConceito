@@ -12,6 +12,7 @@ function menuShow(){
         document.querySelector('.icone-menu-mobile').src = "src/images/menu-mobile/close_mobile.svg";
     }
 }
+
 function menuHidden(){
     const scrollY = window.scrollY;
     const header = document.querySelector(menu.tag)
@@ -25,7 +26,6 @@ function menuHidden(){
 
 window.addEventListener('scroll', menuHidden);
 
-// Função para verificar se um elemento está visível na janela de visualização
 function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
@@ -36,16 +36,14 @@ function isElementInViewport(el) {
     );
 }
 
-function handleScroll() {
-    var meuElemento = document.getElementById('titulo-maps');
+function showTitleMaps() {
+    let titleMaps = document.querySelector('#titulo-maps');
 
-    if (isElementInViewport(meuElemento)) {
-        meuElemento.classList.add('typing-animation');
+    if (isElementInViewport(titleMaps)) {
+        titleMaps.classList.add('typing-animation');
     } else {
-        meuElemento.classList.remove('typing-animation');
+        titleMaps.classList.remove('typing-animation');
     }
 }
 
-window.addEventListener('scroll', handleScroll);
-
-handleScroll();
+window.addEventListener('scroll', showTitleMaps);
