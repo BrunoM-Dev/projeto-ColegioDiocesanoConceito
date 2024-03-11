@@ -18,7 +18,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    scroll-padding-top: 30px;
+    scroll-padding-top: 90px;
 }
 
 .header {
@@ -307,7 +307,7 @@ div.carousel-inner {
 }
 
 #secao-news .titulo-secao {
-    margin-bottom: 15pxc;
+    margin: 15px 0;
 }
 
 .secao-cursos-conteudo {
@@ -538,7 +538,7 @@ div.carousel-inner {
 }
 
 section#secao-news{
-    margin:20px 0 40px;
+    margin:20px 0 50px;
 }
 
 .slide-container {

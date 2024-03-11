@@ -3,7 +3,7 @@ const menu = {
     classeMobile: '.mobile-menu',
     classeDesktop: 'desktop-menu'
 }
-const referenciaMenuHidden = document.querySelector('#secao-endereco').offsetTop;
+const referenciaMenuHidden = document.querySelector('.secao-maps').offsetTop;
 
 function menuShow(){    
     const menuMobile = document.querySelector(menu.classeMobile);
@@ -21,7 +21,7 @@ function menuHidden(){
     const scrollY = window.scrollY;
     const header = document.querySelector(menu.tag)
 
-    if (scrollY >= referenciaMenuHidden) {
+    if (scrollY >= (referenciaMenuHidden)) {
         header.classList.add('oculto');
     } else {
         header.classList.remove('oculto');
