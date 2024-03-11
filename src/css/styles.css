@@ -40,9 +40,9 @@ header .logo .img-logo {
     margin: 0 0 0 20px;
 }
 
-.actived {
-    color: var(--laranja-intermediario) !important;
-}
+.actived {color: var(--laranja-intermediario) !important;}
+
+.text-green {color: var(--verde-claro);}
 
 nav .desktop-menu {
     display: flex;
@@ -198,17 +198,11 @@ div.carousel-inner {
     transform: scale(2.5);
 }
 
-.secao-galeria .carousel-control-next, .secao-galeria .carousel-control-prev {
-    top: 0;
-}
+.secao-galeria .carousel-control-next, .secao-galeria .carousel-control-prev {top: 0;}
 
-.carousel-control-next, .carousel-control-prev {
-    top: 28%;
-}
+.carousel-control-next, .carousel-control-prev {top: 28%;}
 
-#secao-cards {
-    margin-top: 40px;
-}
+#secao-cards {margin-top: 40px;}
 
 .box-cards {
     display: flex;
@@ -242,9 +236,7 @@ div.carousel-inner {
     background-color: var(--laranja-intermediario);
 }
 
-#card-3 .card-item-top {
-    background-color: rgb(55, 69, 163)
-}
+#card-3 .card-item-top {background-color: rgb(55, 69, 163)}
 
 .card-item-top .img-card {
     position: absolute;
@@ -261,9 +253,7 @@ div.carousel-inner {
     transform: translateX(-50%);
 }
 
-.icone {
-    font-size: 40px;
-}
+.icone {font-size: 40px;}
 
 .img-card-item {
     width: 80%;
@@ -293,34 +283,20 @@ div.carousel-inner {
     text-align: left;
 }
 
-#card-1 {
-    background-color: var(--verde-intermediario);
-}
+#card-1 {background-color: var(--verde-intermediario);}
 
-#card-2 {
-    background-color: var(--laranja-escuro);
-}
+#card-2 {background-color: var(--laranja-escuro);}
 
-#card-3 {
-    background-color: #36407E;
-}
+#card-3 {background-color: #36407E;}
 
-#card-1 .img-card {
-    border: 3px solid var(--verde-intermediario);
-}
+#card-1 .img-card {border: 3px solid var(--verde-intermediario);}
 
-#card-2 .img-card {
-    border: 3px solid var(--laranja-escuro);
-}
+#card-2 .img-card {border: 3px solid var(--laranja-escuro);}
 
-#card-3 .img-card {
-    border: 3px solid #44509e;
-}
+#card-3 .img-card { border: 3px solid #44509e;}
 
 
-#secao-cursos {
-    margin-top: 30px;
-}
+#secao-cursos {margin-top: 30px;}
 
 #secao-cursos .titulo-secao {
     font-weight: bolder;
@@ -330,9 +306,7 @@ div.carousel-inner {
     margin-bottom: 35px;
     text-shadow: 1px 0px 1px black;
     color: var(--verde-intermediario);
-
 }
-
 
 .secao-cursos-conteudo {
     display: flex;
@@ -437,7 +411,6 @@ div.carousel-inner {
     background-color: var(--verde-intermediario);
 }
 
-
 #secao-informacoes {
     background-color: var(--branco-font);
 }
@@ -467,19 +440,6 @@ div.carousel-inner {
     height: 400px;
     border-radius: 12px;
 }
-
-/* .informacoes-icone:first-of-type {
-    border-radius: 10px 0px 0px 10px;
-}
-.informacoes-icone:last-of-type {
-    border-radius: 0px 10px 10px 0px;
-}
-.informacoes-text:first-of-type {
-    border-radius: 10px 0px 0px 10px;
-}
-.informacoes-text:last-of-type {
-    border-radius: 0px 10px 10px 0px;
-} */
 
 .informacoes-icone .logo-sobre {
     display: flex;
@@ -681,7 +641,6 @@ span.texto-verde {
     font-size: 2rem;
     color: var(--laranja-claro);
 }
-
 
 .maps-endereco .icone-localizacao {
     border-radius: 10px;
@@ -898,31 +857,17 @@ main .secao-inicial {
     background-position: 50% 0% !important; 
 }
 
-#infantil {
-    background-image: url("../images/artigos-cursos/infantil-guia-2.JPG");
-}
+#infantil {background-image: url("../images/artigos-cursos/infantil-guia-2.JPG");}
 
-#fundamental {
-    background-image: url("../images/artigos-cursos/fudamental-guia.jfif");
-}
+#fundamental {background-image: url("../images/artigos-cursos/fudamental-guia.jfif");}
 
-#medio {
-    background-image: url("../images/artigos-cursos/medio-guia.jpg");
-}
+#medio {background-image: url("../images/artigos-cursos/medio-guia.jpg");}
 
-#extracurricular {
-    background-image: url("../images/artigos-cursos/extracurricular-guia.JPG");
-}
+#extracurricular {background-image: url("../images/artigos-cursos/extracurricular-guia.JPG");}
 
-main {
-    overflow: hidden ;
-}
+main {overflow: hidden ;}
 
-main .secao-inicial {
-    width: 100vw !important;
-}
-
-
+main .secao-inicial {width: 100vw !important;}
 
 main .secao-conteudo.container {
     /* background-image: url(../images/secao-sobre/diocesano-eixoglobal.png);
@@ -972,7 +917,6 @@ main .secao-conteudo .article p.text-article {
     line-height: 1.3;
     width: 100%;
 }
-
 
 main .secao-conteudo .table-turmas table  {
     width: 90%;
@@ -1110,3 +1054,4 @@ main .secao-galeria {
 .galeria .miniatura:hover {
     box-shadow: 0px 0px 30px var(--verde-intermediario);
 }
+

@@ -1,4 +1,8 @@
-const menu = {tag: 'header', classeMobile: '.mobile-menu', classeDesktop: 'desktop-menu'}
+const menu = {
+    tag: 'header',
+    classeMobile: '.mobile-menu',
+    classeDesktop: 'desktop-menu'
+}
 const referenciaMenuHidden = document.querySelector('#secao-endereco').offsetTop;
 
 function menuShow(){    
