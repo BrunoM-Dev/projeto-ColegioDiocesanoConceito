@@ -51,3 +51,46 @@ function showTitleMaps() {
 }
 
 window.addEventListener('scroll', showTitleMaps);
+
+let swiper = new Swiper(".slide-container", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    sliderPerGroup: 3,
+    loop: true,
+    centerSlide: "true",
+    fade: "true",
+    grabCursor: "true",
+
+    autoplay: {
+        delay: 2500,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false
+    },
+
+    pagination: {
+        el: ".swiper-pagination", 
+        clickable: true, 
+        dynamicBullets: true
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 1,
+        },
+        750: {
+            slidesPerView: 2,
+        },
+        1100: {
+            slidesPerView: 3
+        }
+    },
+});
+

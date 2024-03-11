@@ -40,9 +40,7 @@ header .logo .img-logo {
     margin: 0 0 0 20px;
 }
 
-.actived {color: var(--laranja-intermediario) !important;}
-
-.text-green {color: var(--verde-claro);}
+.text-green {color: #73ec04;}
 
 nav .desktop-menu {
     display: flex;
@@ -107,10 +105,10 @@ nav .desktop-menu #item-menu-cursos .aba-cursos li a {
 }
 
 nav .desktop-menu #item-menu-cursos .aba-cursos li:hover a {
-    color: var(--laranja-intermediario);
+    color: #ffae4a;
 }
 
-#current-page {color: var(--laranja-intermediario);}
+#current-page {color: #ffae4a;}
 
 nav .desktop-menu .item-menu:hover {
     color: var(--laranja-intermediario);
@@ -298,7 +296,7 @@ div.carousel-inner {
 
 #secao-cursos {margin-top: 30px;}
 
-#secao-cursos .titulo-secao {
+.titulo-secao {
     font-weight: bolder;
     font-size: 6rem;
     text-align: center;
@@ -306,6 +304,10 @@ div.carousel-inner {
     margin-bottom: 35px;
     text-shadow: 1px 0px 1px black;
     color: var(--verde-intermediario);
+}
+
+#secao-news .titulo-secao {
+    margin-bottom: 15pxc;
 }
 
 .secao-cursos-conteudo {
@@ -534,6 +536,115 @@ div.carousel-inner {
     font-size: 18px;
     font-weight: 100;
 }
+
+section#secao-news{
+    margin:20px 0 40px;
+}
+
+.slide-container {
+    margin: 0 40px;
+}
+
+.slide-container .card {
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    cursor: grab;
+    text-overflow: ellipsis;
+
+}
+
+.slide-container .card .image-news { 
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-container .card .image-news img {
+    width: 100%;
+    height: auto ;
+    border-radius: 8px;
+    z-index: -1 ;
+    object-fit: cover;
+    /*  box-shadow: 2px 4px 9px #73ec04; */
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.slide-container .card .overlay-news {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity .3s ease;
+    z-index: 10;
+}
+
+.slide-container .card:hover .overlay-news {opacity: 1;}
+
+.slide-container .card:hover .image-news img {transform: scale(1.2);}
+
+.slide-container .card .overlay-news-content {
+    position: absolute;
+    left: 2%; 
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-container .card .overlay-news-content h2 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding: 20px 20px 0;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Gilroy-extrabold', sans-serif;
+}
+
+.slide-container .card .overlay-news-content p {
+    display: -webkit-box;
+    font-size: 1.5rem;
+    overflow: hidden;
+    padding: 0 20px ;
+    font-family: 'Gilroy', sans-serif;
+}
+
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 20px; 
+ }
+
+.swiper-navBtn {
+    color: #000000;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+    transform: translateY(120%)
+}
+
+.swiper-navBtn:hover {
+    color: #fff;
+    background: #F9A132;
+    border-radius: 50%;
+    transform: translateY(-50%), scale(1.23);
+}
+    
+.swiper-navBtn::before,
+.swiper-navBtn::after {font-size: 18px;}
+
+.swiper-pagination-bullet {
+    background-color: #fff;
+    border: 3px solid #73ec04;
+}
+
 
 .secao-maps {
     border-radius: 10px;
