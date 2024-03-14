@@ -21,6 +21,63 @@ html {
     scroll-padding-top: 90px;
 }
 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+        border-right-color: transparent;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 1);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes autoplay-loop-animation {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    10% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    20% {   
+        transform: translate3d(-340px, 0px, 0px);
+    }
+    30% {   
+        transform: translate3d(-680px, 0px, 0px);
+    }
+    40% {
+        transform: translate3d(-1020px, 0px, 0px);
+    }
+    50% {   
+        transform: translate3d(-1360px, 0px, 0px);
+    }
+    60% {   
+        transform: translate3d(-1700px, 0px, 0px);
+    }
+    70% {   
+        transform: translate3d(-2040px, 0px, 0px);
+    }
+    80% {   
+        transform: translate3d(-2200px, 0px, 0px);
+    }
+    90% {   
+        transform: translate3d(-2400px, 0px, 0px);
+    }
+    100% {   
+        transform: translate3d(0px, 0px, 0px);
+    } 
+}
+
 .header {
     background-color: var(--verde-intermediario);
     color: var(--branco-font);
@@ -545,6 +602,19 @@ section#secao-news{
     margin: 0 40px;
 }
 
+.card-wrapper {
+    animation-duration: 20s;
+    animation-name: autoplay-loop-animation !important;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition: transform 0.3s ease; 
+}
+
+.card-wrapper:hover {
+    animation-play-state: paused;
+}
+
+
 .slide-container .card {
     background-color: #fff;
     border-radius: 8px;
@@ -552,12 +622,20 @@ section#secao-news{
     overflow: hidden;
     cursor: grab;
     text-overflow: ellipsis;
-
+    width: auto !important;
+    margin-right: 40px !important;
 }
 
-.slide-container .card .image-news { 
+.card a {
+    height: 300px;
+    width: 300px;
+}
+
+.card .image-news { 
     position: relative;
     overflow: hidden;
+    height: 300px;
+    width: 300px;
 }
 
 .slide-container .card .image-news img {
@@ -588,27 +666,28 @@ section#secao-news{
 .slide-container .card:hover .image-news img {transform: scale(1.2);}
 
 .slide-container .card .overlay-news-content {
-    position: absolute;
     left: 2%; 
     color: #fff;
     height: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
-.slide-container .card .overlay-news-content h2 {
-    font-size: 2.3rem;
+.slide-container .card .overlay-news-content .title-news {
+    font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 10px;
-    padding: 20px 20px 0;
+    padding: 0 20px 0;
     width: 100%;
     font-weight: bold;
     font-family: 'Gilroy-extrabold', sans-serif;
 }
 
-.slide-container .card .overlay-news-content p {
+.slide-container .card .overlay-news-content .text-news {
     display: -webkit-box;
-    font-size: 1.5rem;
+    font-size: 2rem;
     overflow: hidden;
     padding: 0 20px ;
     font-family: 'Gilroy', sans-serif;
@@ -693,28 +772,6 @@ section#secao-news{
 .typing-animation {
     animation: blinkCursor steps(40) 500ms infinite normal, typing 4s steps(60) 1s normal both;
 }
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-        border-right-color: transparent;
-    }
-}
-
-@keyframes blinkCursor {
-    from {
-        border-right-color: rgba(255, 255, 255, 1);
-    }
-
-    to {
-        border-right-color: transparent;
-    }
-}
-
 
 .maps-endereco .localizacao-content {
     display: flex;

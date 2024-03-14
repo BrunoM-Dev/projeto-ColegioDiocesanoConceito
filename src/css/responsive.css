@@ -786,8 +786,29 @@ html{
 }
 @media screen and (max-width: 750px) {
     .swiper-navBtn {display: none;}
-    .slide-container .card .overlay-news-content h2 {font-size: 3rem; padding: 30px 20px 20px;}
-    .slide-container .card .overlay-news-content p {font-size: 1.8rem;}
+    .slide-container .card .overlay-news-content .title-news {font-size: 3rem; padding: 10px 20px 0px;}
+    .slide-container .card .overlay-news-content .text-news {font-size: 1.8rem;}
+
+    @keyframes autoplay-loop-animation {
+        0%  {transform: translate3d(0px, 0px, 0px);}
+        10% {transform: translate3d(-260px, 0 0);}
+        20% {transform: translate3d(-600px, 0px, 0px);}
+        30% {transform: translate3d(-940px, 0px, 0px);}
+        40% {transform: translate3d(-1280px, 0px, 0px);}
+        50% {transform: translate3d(-1620px, 0px, 0px);}
+        60% {transform: translate3d(-1960px, 0px, 0px);}
+        70% {transform: translate3d(-2300px, 0px, 0px);}
+        80% {transform: translate3d(-2640px, 0px, 0px);}
+        90% {transform: translate3d(-2980px, 0px, 0px);}
+        100%{transform: translate3d(0px, 0px, 0px);}
+    }
+    .card-wrapper {
+        animation-duration: 25s;
+        animation-name: autoplay-loop-animation;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        transition: transform 0.3s ease; 
+    }
 }
 @media screen and (min-width: 1200px) {
     .slide-container .card .overlay-news-content p {
@@ -808,4 +829,28 @@ html{
     .slide-container .card .overlay-news-content {align-items: center; justify-content: center; width: 100%;}
     .slide-container .card .overlay-news-content h2 {font-size: 2rem; text-align: center;}
     .slide-container .card .overlay-news-content p {display: none;}
+    @keyframes autoplay-loop-animation {
+        0%   {transform: translate3d(0px, 0px, 0px);}
+        5%   {transform: translate3d(0px, 0px, 0px);}
+        10%  {transform: translate3d(-270px, 0px, 0px);}
+        20%  {transform: translate3d(-560px, 0px, 0px);}
+        30%  {transform: translate3d(-850px, 0px, 0px);}
+        40%  {transform: translate3d(-1140px, 0px, 0px);}
+        50%  {transform: translate3d(-1430px, 0px, 0px);}
+        60%  {transform: translate3d(-1720px, 0px, 0px);}
+        70%  {transform: translate3d(-2010px, 0px, 0px);}
+        80%  {transform: translate3d(-2300px, 0px, 0px);}
+        90%  {transform: translate3d(-2590px, 0px, 0px);  }
+        100% {transform: translate3d(0px, 0px, 0px);}
+    }
+    .card a {
+        height: 250px;
+        width: 250px;
+    }
+    .card .image-news { 
+        position: relative;
+        overflow: hidden;
+        height: 250px;
+        width: 250px;
+    }
 }
