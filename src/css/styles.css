@@ -68,14 +68,11 @@ html {
         transform: translate3d(-2040px, 0px, 0px);
     }
     80% {   
-        transform: translate3d(-2200px, 0px, 0px);
-    }
-    90% {   
         transform: translate3d(-2400px, 0px, 0px);
     }
-    100% {   
+    90% {   
         transform: translate3d(0px, 0px, 0px);
-    } 
+    }
 }
 
 .header {
