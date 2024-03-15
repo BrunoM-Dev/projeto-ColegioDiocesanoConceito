@@ -3,6 +3,7 @@ const menu = {
     classeMobile: '.mobile-menu',
     classeDesktop: 'desktop-menu'
 }
+
 const referenciaMenuHidden = document.querySelector('.secao-maps').offsetTop;
 
 function menuShow(){    

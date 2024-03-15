@@ -92,6 +92,7 @@ header .logo .img-logo {
     background-image: url("../images/menu-desktop/logo-branca-desktop.jpg");
     background-repeat: no-repeat;
     margin: 0 0 0 20px;
+    font-size: 0px;
 }
 
 .text-green {color: #73ec04;}

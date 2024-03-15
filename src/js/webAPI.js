@@ -2,19 +2,9 @@ const campos = "media_url,media_type,caption,permalink";
 const limit = 45;
 let token = "IGQWRPdnhHNnR2S3E2cjlzMkpYcml3Q1BKSmRSbGI0N3F0STRDN3dVN0c1aTY3YndtQ3dUTk1RWF9VN1V1TkIySHk2VFpOWk1YMk5lQ0tXSUM4ZAlJIRDRCVkMzejktcXBjS05FRV81UkgwMWZA4YjZANLUt1eXpqTEEZD"
 
-/* const refreshUrl = `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${token}`;
-const timeRefresh = 86400 * 30; */
-/* setInterval(() => {
-   fetch(refreshUrl)
-   .then(response => response.json())
-   .then(dados => {
-        console.log(`seu token foi atualizado e expira em ${Math.trunc((dados.expires_in / 3600) / 24 )} dias`)
-        token = dados.acess_token;
-    })
-    .catch((error) => {
-        console.log(error)
-    })
-}, timeRefresh); */
+/* 
+const refreshUrl = `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=IGQWRPdnhHNnR2S3E2cjlzMkpYcml3Q1BKSmRSbGI0N3F0STRDN3dVN0c1aTY3YndtQ3dUTk1RWF9VN1V1TkIySHk2VFpOWk1YMk5lQ0tXSUM4ZAlJIRDRCVkMzejktcXBjS05FRV81UkgwMWZA4YjZANLUt1eXpqTEEZD`;
+*/  
 
 
 const baseURL = `https://graph.instagram.com/me/media?fields=${campos}&access_token=${token}&limit=${limit}`
