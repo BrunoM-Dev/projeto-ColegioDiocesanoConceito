@@ -117,6 +117,43 @@ html{
         margin-bottom: 70px;
     }
 
+    @keyframes autoplay-loop-animation {
+        0% {
+            transform: translate3d(0px, 0px, 0px);
+        }
+        10% {
+            transform: translate3d(0px, 0px, 0px);
+        }
+        20% {   
+            transform: translate3d(-340px, 0px, 0px);
+        }
+        30% {   
+            transform: translate3d(-680px, 0px, 0px);
+        }
+        40% {
+            transform: translate3d(-1020px, 0px, 0px);
+        }
+        50% {   
+            transform: translate3d(-1360px, 0px, 0px);
+        }
+        60% {   
+            transform: translate3d(-1700px, 0px, 0px);
+        }
+        70% {   
+            transform: translate3d(-2040px, 0px, 0px);
+        }
+        80% {   
+            transform: translate3d(-2300px, 0px, 0px);
+        }
+        90% {   
+            transform: translate3d(-2300px, 0px, 0px);
+        }
+        100% {   
+            transform: translate3d(0px, 0px, 0px);
+        }
+    }
+
+
     .informacoes-icone .logo-sobre{
         width: 280px;
         height: 178px;
