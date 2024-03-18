@@ -51,7 +51,7 @@ fetch(baseURL)
 
                     const titleNews = document.createElement('h2');
                     titleNews.classList.add('title-news')
-                    titleNews.innerHTML = 'NOTICIA <span class="text-green"> DIOCESANO </span>';
+                    titleNews.innerHTML = 'DIOCESANO <span class="text-green"> CONCEITO </span>';
 
                     const textNews = document.createElement('p');
                     textNews.classList.add('text-news')
