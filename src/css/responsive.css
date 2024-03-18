@@ -791,7 +791,7 @@ html{
 
     @keyframes autoplay-loop-animation {
         0%  {transform: translate3d(0px, 0px, 0px);}
-        10% {transform: translate3d(-260px, 0 0);}
+        10% {transform: translate3d(-260px, 0px, 0px);}
         20% {transform: translate3d(-600px, 0px, 0px);}
         30% {transform: translate3d(-940px, 0px, 0px);}
         40% {transform: translate3d(-1280px, 0px, 0px);}
