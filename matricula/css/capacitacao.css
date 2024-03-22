@@ -1,0 +1,42 @@
+main {
+    padding: 120px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh);
+}
+
+main form {
+    padding: 40px;
+    width: 400px;
+
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+form h1  {
+    text-align: center;
+}
+
+form input {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto 15px;
+}
+
+form button {
+    display: block;
+    width: 85%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    transition: color, background-color .4s;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(66, 219, 66);
+    color: #fff;
+}

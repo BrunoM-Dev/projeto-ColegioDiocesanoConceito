@@ -68,14 +68,22 @@ html {
         transform: translate3d(-1700px, 0px, 0px);
     }
     80% {
-        transform: translate3d(-2040px, 0px, 0px);
+        transform: translate3d(-2000px, 0px, 0px);
     }
     90% {
-        transform: translate3d(-2040px, 0px, 0px);
+        transform: translate3d(-2000px, 0px, 0px);
     }
     100% {   
         transform: translate3d(0px, 0px, 0px);
     }
+}
+
+.autoplay {
+    animation-duration: 20s;
+    animation-name: autoplay-loop-animation !important;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition: transform 0.3s ease; 
 }
 
 .header {
@@ -603,14 +611,6 @@ section#secao-news{
     margin: 0 40px;
 }
 
-.card-wrapper {
-    animation-duration: 20s;
-    animation-name: autoplay-loop-animation !important;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-    transition: transform 0.3s ease; 
-}
-
 .card-wrapper:hover {
     animation-play-state: paused;
 }
@@ -625,6 +625,10 @@ section#secao-news{
     text-overflow: ellipsis;
     width: auto !important;
     margin-right: 40px !important;
+}
+
+.slide-container .card:last-of-type(1) {
+    border: 10px solid green;
 }
 
 .card a {

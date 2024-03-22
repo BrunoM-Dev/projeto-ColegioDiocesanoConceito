@@ -4,6 +4,7 @@ const menu = {
     classeDesktop: 'desktop-menu'
 }
 
+
 const referenciaMenuHidden = document.querySelector('.secao-maps').offsetTop;
 
 function menuShow(){    
@@ -51,7 +52,18 @@ function showTitleMaps() {
     }
 }
 
+function showNextNews() {
+    let sectioNews = document.querySelector('#secao-news');
+    let cardNews = document.querySelector('.card-wrapper ');
+
+    if (isElementInViewport(sectioNews)) {
+        cardNews.classList.add('autoplay');
+    }
+}
+
+
 window.addEventListener('scroll', showTitleMaps);
+window.addEventListener('scroll', showNextNews);
 
 let swiper = new Swiper(".slide-container", {
     slidesPerView: 3,
